@@ -6,6 +6,7 @@ import PPCAuditSection from "@/components/sections/PPCAuditSection";
 import MarketingContextSection from "@/components/sections/MarketingContextSection";
 import RecommendationsSection from "@/components/sections/RecommendationsSection";
 import ProposalBridgeSection from "@/components/sections/ProposalBridgeSection";
+import UnlaunchedProposalsSection from "@/components/sections/UnlaunchedProposalsSection";
 import { PhotoStrip } from "@/components/PhotoStrip";
 import { FadeIn } from "@/components/FadeIn";
 import Image from "next/image";
@@ -123,6 +124,9 @@ export default function Home() {
 
         {/* Bridge back to proposal */}
         <ProposalBridgeSection />
+
+        {/* Unlaunched Proposals */}
+        <UnlaunchedProposalsSection />
       </main>
 
       {/* Footer */}
