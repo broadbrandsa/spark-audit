@@ -60,7 +60,7 @@ const ProposalBridgeSection: React.FC = () => {
                 fontSize: '14px',
                 fontWeight: '600',
                 letterSpacing: '0.5px',
-                color: 'rgba(200, 218, 227, 0.6)',
+                color: 'rgba(200, 218, 227, 0.75)',
                 textTransform: 'uppercase',
                 marginBottom: '16px',
               }}
@@ -273,7 +273,7 @@ const ProposalBridgeSection: React.FC = () => {
                 style={{
                   fontSize: '12px',
                   fontWeight: '600',
-                  color: 'rgba(200, 218, 227, 0.6)',
+                  color: 'rgba(200, 218, 227, 0.75)',
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px',
                 }}
@@ -291,7 +291,7 @@ const ProposalBridgeSection: React.FC = () => {
                 style={{
                   fontSize: '12px',
                   fontWeight: '600',
-                  color: 'rgba(200, 218, 227, 0.6)',
+                  color: 'rgba(200, 218, 227, 0.75)',
                   textTransform: 'uppercase',
                   letterSpacing: '0.5px',
                 }}

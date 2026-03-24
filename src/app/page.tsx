@@ -162,7 +162,7 @@ export default function Home() {
             <p
               className="text-xs"
               style={{
-                color: "rgba(255,255,255,0.25)",
+                color: "rgba(255,255,255,0.45)",
                 fontFamily: "var(--font-body)",
               }}
             >

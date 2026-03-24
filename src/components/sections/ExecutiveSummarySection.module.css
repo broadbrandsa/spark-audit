@@ -63,7 +63,7 @@
   font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 600;
-  color: #6b7280;
+  color: #4b5563;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
@@ -211,7 +211,7 @@
 .quickWinEffort {
   font-family: var(--font-body);
   font-size: 0.8125rem;
-  color: #9ca3af;
+  color: #6b7280;
 }
 
 /* Responsive Design */

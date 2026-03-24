@@ -94,7 +94,7 @@ export default function UnlaunchedProposalsSection() {
                 fontSize: '14px',
                 fontWeight: '600',
                 letterSpacing: '0.5px',
-                color: 'rgba(200, 218, 227, 0.6)',
+                color: 'rgba(200, 218, 227, 0.75)',
                 textTransform: 'uppercase',
                 marginBottom: '16px',
               }}
@@ -116,7 +116,7 @@ export default function UnlaunchedProposalsSection() {
             <p
               style={{
                 fontSize: '16px',
-                color: 'rgba(200, 218, 227, 0.7)',
+                color: 'rgba(200, 218, 227, 0.82)',
                 maxWidth: '700px',
                 margin: '0 auto',
                 lineHeight: '1.6',
@@ -204,7 +204,7 @@ export default function UnlaunchedProposalsSection() {
                 <p
                   style={{
                     fontSize: '14px',
-                    color: 'rgba(200, 218, 227, 0.75)',
+                    color: 'rgba(200, 218, 227, 0.88)',
                     lineHeight: '1.6',
                     margin: '0 0 16px 0',
                     flex: '1',
@@ -229,7 +229,7 @@ export default function UnlaunchedProposalsSection() {
                       fontWeight: '700',
                       textTransform: 'uppercase' as const,
                       letterSpacing: '0.5px',
-                      color: '#1f49c9',
+                      color: '#7ba4f7',
                       margin: '0 0 4px 0',
                     }}
                   >
@@ -277,7 +277,7 @@ export default function UnlaunchedProposalsSection() {
             <p
               style={{
                 fontSize: '14px',
-                color: 'rgba(200, 218, 227, 0.65)',
+                color: 'rgba(200, 218, 227, 0.82)',
                 margin: '0',
                 fontFamily: 'var(--font-body)',
               }}

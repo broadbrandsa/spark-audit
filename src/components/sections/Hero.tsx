@@ -115,7 +115,7 @@ export function Hero() {
             style={{
               fontFamily: "var(--font-heading)",
               fontSize: "clamp(1.1rem, 3vw, 1.75rem)",
-              color: "rgba(255,255,255,0.45)",
+              color: "rgba(255,255,255,0.65)",
               lineHeight: 0.92,
               letterSpacing: "-0.04em",
             }}
@@ -188,7 +188,7 @@ export function Hero() {
               </span>
               <span
                 className="text-xs font-medium uppercase tracking-widest whitespace-nowrap"
-                style={{ color: "rgba(255,255,255,0.35)" }}
+                style={{ color: "rgba(255,255,255,0.55)" }}
               >
                 {stat.label}
               </span>

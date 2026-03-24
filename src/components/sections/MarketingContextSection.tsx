@@ -121,7 +121,7 @@ const MarketingContextSection = () => {
                       fontWeight: "600",
                       textTransform: "uppercase" as const,
                       letterSpacing: "0.08em",
-                      color: "#9ca3af",
+                      color: "#6b7280",
                       marginBottom: "6px",
                     }}
                   >
@@ -140,7 +140,7 @@ const MarketingContextSection = () => {
                   <div
                     style={{
                       fontSize: "12px",
-                      color: "#9ca3af",
+                      color: "#6b7280",
                       marginBottom: "8px",
                     }}
                   >
