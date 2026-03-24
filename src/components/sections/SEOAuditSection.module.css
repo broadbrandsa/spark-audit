@@ -1,0 +1,758 @@
+.section {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.labelRow {
+  margin-bottom: 1.5rem;
+}
+
+.headingContainer {
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Score Breakdown Section */
+.scoreBreakdownSection {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(200, 218, 227, 0.4);
+}
+
+.scoreBreakdownHeading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin: 0 0 2rem 0;
+}
+
+.scoreMetricsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.metricBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.metricLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metricName {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--spark-dark-purple, #230127);
+}
+
+.metricScore {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--spark-orange, #ff4800);
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--spark-dark-blue, #1f49c9),
+    var(--spark-light-blue, #00a8e1)
+  );
+  border-radius: 6px;
+  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Tabbed Section */
+.tabbedSection {
+  margin-bottom: 2rem;
+}
+
+.tabsContainer {
+  width: 100%;
+}
+
+.tabsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: white;
+  border-radius: 12px;
+  padding: 0.75rem;
+  border: 1px solid rgba(200, 218, 227, 0.4);
+  margin-bottom: 2rem;
+}
+
+.tabTrigger {
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #6b7280;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tabTrigger:hover {
+  background-color: #f3f4f6;
+  color: var(--spark-dark-purple, #230127);
+}
+
+.tabTrigger[data-active='true'] {
+  background-color: var(--spark-dark-blue, #1f49c9);
+  color: white;
+}
+
+.tabContent {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Summary Card */
+.summaryCard {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(200, 218, 227, 0.4);
+  border-left: 5px solid;
+  transition: all 0.3s ease;
+}
+
+.summaryCard:hover {
+  box-shadow: 0 8px 24px rgba(31, 73, 201, 0.08);
+}
+
+.summaryCard.impactCritical {
+  border-left-color: var(--spark-orange, #ff4800);
+}
+
+.summaryCard.impactHigh {
+  border-left-color: var(--spark-dark-blue, #1f49c9);
+}
+
+.summaryCard.impactMedium {
+  border-left-color: var(--spark-grey, #c8dae3);
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.cardTitleSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin: 0;
+}
+
+.impactBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.impactBadge.impactCritical {
+  background-color: rgba(255, 72, 0, 0.15);
+  color: var(--spark-orange, #ff4800);
+}
+
+.impactBadge.impactHigh {
+  background-color: rgba(31, 73, 201, 0.15);
+  color: var(--spark-dark-blue, #1f49c9);
+}
+
+.impactBadge.impactMedium {
+  background-color: rgba(200, 218, 227, 0.3);
+  color: #6b7280;
+}
+
+.metricHighlight {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--spark-orange, #ff4800);
+}
+
+.cardDescription {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0 0 2rem 0;
+}
+
+/* Tables */
+.issuesTable {
+  margin-top: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tableCol1,
+.tableCol2,
+.tableCol3 {
+  padding: 0;
+}
+
+.tableColPage {
+  grid-column: 1;
+}
+
+.tableColKeyword {
+  grid-column: 1;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: #4b5563;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.severityBadge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.severityBadge.severity-critical {
+  background-color: rgba(255, 72, 0, 0.15);
+  color: var(--spark-orange, #ff4800);
+}
+
+.severityBadge.severity-high {
+  background-color: rgba(31, 73, 201, 0.15);
+  color: var(--spark-dark-blue, #1f49c9);
+}
+
+.ctrBad {
+  color: var(--spark-orange, #ff4800);
+  font-weight: 700;
+}
+
+.additionalIssues {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 72, 0, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--spark-orange, #ff4800);
+}
+
+.issuesHeading {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin: 0 0 0.75rem 0;
+}
+
+.issuesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.issuesList li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #4b5563;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.issuesList li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--spark-orange, #ff4800);
+  font-weight: 700;
+}
+
+/* Performance Metrics Grid */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.metricCard {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.metricCard:hover {
+  border-color: var(--spark-dark-blue, #1f49c9);
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(31, 73, 201, 0.06);
+}
+
+.metricCardLabel {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.metricCardValue {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--spark-orange, #ff4800);
+  margin-bottom: 0.5rem;
+}
+
+.metricCardDetails {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+/* Content Analysis Grid */
+.contentAnalysisGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contentAnalysisItem {
+  background-color: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.contentAnalysisItem.strength {
+  border-color: rgba(31, 73, 201, 0.3);
+  background-color: rgba(31, 73, 201, 0.05);
+}
+
+.contentAnalysisItem.weakness {
+  border-color: rgba(255, 72, 0, 0.3);
+  background-color: rgba(255, 72, 0, 0.05);
+}
+
+.contentAnalysisItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.analysisLabel {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.analysisValue {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin-bottom: 1rem;
+}
+
+.analysisIcon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contentAnalysisItem.strength .analysisIcon {
+  color: var(--spark-dark-blue, #1f49c9);
+}
+
+.contentAnalysisItem.weakness .analysisIcon {
+  color: var(--spark-orange, #ff4800);
+}
+
+.opportunityNote {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(31, 73, 201, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--spark-dark-blue, #1f49c9);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.opportunityNote strong {
+  color: var(--spark-dark-purple, #230127);
+  font-weight: 600;
+}
+
+/* Impact Color Classes */
+.impactCritical {
+  --impact-color: var(--spark-orange, #ff4800);
+}
+
+.impactHigh {
+  --impact-color: var(--spark-dark-blue, #1f49c9);
+}
+
+.impactMedium {
+  --impact-color: var(--spark-grey, #c8dae3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .scoreBreakdownSection {
+    padding: 1.5rem;
+  }
+
+  .scoreBreakdownHeading {
+    font-size: 1.25rem;
+  }
+
+  .summaryCard {
+    padding: 1.5rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .metricHighlight {
+    font-size: 1.25rem;
+  }
+
+  .cardDescription {
+    font-size: 0.875rem;
+  }
+
+  .tabsList {
+    gap: 0.375rem;
+    padding: 0.5rem;
+  }
+
+  .tabTrigger {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .tableHeader {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    font-size: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .tableRow {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    padding: 0.75rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .metricCard {
+    padding: 1rem;
+  }
+
+  .metricCardValue {
+    font-size: 1.25rem;
+  }
+
+  .contentAnalysisGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .contentAnalysisItem {
+    padding: 1rem;
+  }
+
+  .analysisValue {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .headingContainer {
+    margin-bottom: 2rem;
+  }
+
+  .scoreBreakdownSection {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .scoreBreakdownHeading {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .metricScore {
+    font-size: 0.75rem;
+  }
+
+  .summaryCard {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .cardTitleSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .impactBadge {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .metricHighlight {
+    font-size: 1rem;
+  }
+
+  .cardDescription {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tabsList {
+    gap: 0.25rem;
+    padding: 0.375rem;
+    overflow-x: auto;
+  }
+
+  .tabTrigger {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .tableHeader {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+  }
+
+  .tableRow {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .metricCard {
+    padding: 0.75rem;
+  }
+
+  .metricCardLabel {
+    font-size: 0.7rem;
+  }
+
+  .metricCardValue {
+    font-size: 1rem;
+  }
+
+  .metricCardDetails {
+    font-size: 0.7rem;
+  }
+
+  .contentAnalysisGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .contentAnalysisItem {
+    padding: 0.75rem;
+    border-width: 1px;
+  }
+
+  .analysisLabel {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .analysisValue {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .analysisIcon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.875rem;
+  }
+
+  .additionalIssues,
+  .opportunityNote {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+
+  .issuesHeading {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .issuesList li {
+    font-size: 0.8rem;
+    padding-left: 1.25rem;
+  }
+}

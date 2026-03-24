@@ -1,0 +1,319 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   SPARK SCHOOLS BRAND TOKENS
+   Extracted from spark-schools.webflow site
+   ============================================================ */
+:root {
+  /* --- SPARK Brand Colors --- */
+  --spark-purple: #1f49c9;
+  --spark-dark-purple: #230127;
+  --spark-light-purple: #801078;
+  --spark-dark-blue: #1f49c9;
+  --spark-light-blue: #00a8e1;
+  --spark-orange: #ff4800;
+  --spark-grey: #c8dae3;
+
+  /* --- Typography --- */
+  --font-heading: "Sofia Sans", system-ui, sans-serif;
+  --font-body: "Poppins", system-ui, sans-serif;
+
+  /* --- shadcn theme tokens mapped to SPARK brand --- */
+  --background: oklch(1 0 0);                          /* white */
+  --foreground: oklch(0.11 0.045 320);                 /* #2b0430 purple */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.11 0.045 320);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.11 0.045 320);
+  --primary: oklch(0.11 0.045 320);                    /* #2b0430 deep purple */
+  --primary-foreground: oklch(1 0 0);                  /* white */
+  --secondary: oklch(0.96 0.008 240);                  /* light grey-blue */
+  --secondary-foreground: oklch(0.11 0.045 320);
+  --muted: oklch(0.97 0.004 240);
+  --muted-foreground: oklch(0.50 0.02 240);
+  --accent: oklch(0.45 0.22 260);                      /* #1f49c9 dark blue */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.62 0.24 30);                  /* #ff4800 orange */
+  --border: oklch(0.92 0.008 240);                     /* #c8dae3 grey */
+  --input: oklch(0.92 0.008 240);
+  --ring: oklch(0.45 0.22 260);                        /* dark blue */
+  --radius: 0.75rem;                                   /* 12px base radius */
+
+  /* Chart colors using SPARK palette */
+  --chart-1: oklch(0.55 0.22 200);                     /* light blue */
+  --chart-2: oklch(0.45 0.22 260);                     /* dark blue */
+  --chart-3: oklch(0.11 0.045 320);                    /* purple */
+  --chart-4: oklch(0.62 0.24 30);                      /* orange */
+  --chart-5: oklch(0.40 0.18 320);                     /* light purple */
+
+  /* Sidebar */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.11 0.045 320);
+  --sidebar-primary: oklch(0.11 0.045 320);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.96 0.008 240);
+  --sidebar-accent-foreground: oklch(0.11 0.045 320);
+  --sidebar-border: oklch(0.92 0.008 240);
+  --sidebar-ring: oklch(0.45 0.22 260);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: ui-monospace, monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-3xl: calc(var(--radius) * 3);
+  --radius-full: 9999px;
+
+  /* Expose SPARK brand colors as Tailwind utilities */
+  --color-spark-purple: var(--spark-purple);
+  --color-spark-dark-purple: var(--spark-dark-purple);
+  --color-spark-light-purple: var(--spark-light-purple);
+  --color-spark-dark-blue: var(--spark-dark-blue);
+  --color-spark-light-blue: var(--spark-light-blue);
+  --color-spark-orange: var(--spark-orange);
+  --color-spark-grey: var(--spark-grey);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--spark-purple);
+  }
+}
+
+/* ============================================================
+   ANIMATIONS & SCROLL EFFECTS
+   ============================================================ */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes slideCardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide-card-in {
+  animation: slideCardIn 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-animate-1 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
+.hero-animate-2 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.25s both; }
+.hero-animate-3 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.4s both; }
+.hero-animate-4 { animation: fadeUp 0.9s cubic-bezier(0.16,1,0.3,1) 0.55s both; }
+.hero-animate-5 { animation: fadeIn 1s ease 0.75s both; }
+
+/* ─── Section labels ─── */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--spark-orange);
+}
+
+/* ─── Divider ─── */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(43,4,48,0.15), transparent);
+}
+
+/* ─── Card hover effect ─── */
+.card-spark {
+  background: #ffffff;
+  border: 1px solid rgba(200,218,227,0.6);
+  border-radius: 16px;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-spark:hover {
+  border-color: rgba(43,4,48,0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(43,4,48,0.10);
+}
+
+/* ─── Text gradients ─── */
+.text-spark-gradient {
+  background: linear-gradient(135deg, #1f49c9 0%, transparent 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.text-blue-gradient {
+  background: linear-gradient(135deg, #1f49c9 0%, rgba(31,73,201,0.4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Grain overlay ─── */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(43,4,48,0.2); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(43,4,48,0.4); }
+
+/* ============================================================
+   SPARK COMPONENT UTILITIES
+   ============================================================ */
+
+/* Container matching SPARK's 1208px max-width */
+.container-spark {
+  max-width: 1208px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* SPARK pill buttons */
+.btn-spark-primary {
+  background-color: var(--spark-purple);
+  color: white;
+  border-radius: 44px;
+  padding: 8px 24px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.btn-spark-primary:hover {
+  background-color: var(--spark-light-purple);
+}
+
+.btn-spark-secondary {
+  background-color: white;
+  color: #141414;
+  border-radius: 99px;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+.btn-spark-secondary:hover {
+  color: white;
+  background-color: #000;
+}
+
+/* ─── Lock screen ─── */
+@keyframes lockShake {
+  0%, 100% { transform: translateX(0); }
+  15%       { transform: translateX(-10px); }
+  30%       { transform: translateX(10px); }
+  45%       { transform: translateX(-8px); }
+  60%       { transform: translateX(8px); }
+  75%       { transform: translateX(-4px); }
+  90%       { transform: translateX(4px); }
+}
+@keyframes lockFadeOut {
+  0%   { opacity: 1; transform: scale(1); }
+  60%  { opacity: 0.9; transform: scale(1.03); }
+  100% { opacity: 0; transform: scale(1.06); pointer-events: none; }
+}
+.lock-overlay {
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.lock-shake {
+  animation: lockShake 0.65s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.lock-exiting {
+  animation: lockFadeOut 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

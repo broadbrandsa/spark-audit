@@ -1,0 +1,319 @@
+.section {
+  width: 100%;
+  background-color: white;
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.labelRow {
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+/* Score Cards Grid */
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.scoreCard {
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 4px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scoreCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.scoreCard.tone-red {
+  border-left-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.05);
+}
+
+.scoreCard.tone-orange {
+  border-left-color: var(--spark-orange, #ff4800);
+  background-color: rgba(255, 72, 0, 0.05);
+}
+
+.scoreCard.tone-blue {
+  border-left-color: var(--spark-purple, #1f49c9);
+  background-color: rgba(31, 73, 201, 0.05);
+}
+
+.scoreLabel {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.scoreValue {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin-bottom: 0.5rem;
+}
+
+.scoreStatus {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Opportunities Section */
+.opportunitiesSection {
+  margin-bottom: 4rem;
+}
+
+.subheading {
+  font-family: var(--font-heading);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin-bottom: 2rem;
+}
+
+.opportunitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.opportunityCard {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.opportunityCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--spark-purple, #1f49c9);
+  background-color: white;
+  box-shadow: 0 8px 24px rgba(31, 73, 201, 0.1);
+}
+
+.opportunityNumber {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--spark-purple, #1f49c9), var(--spark-orange, #ff4800));
+  color: white;
+  border-radius: 50%;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.opportunityContent {
+  flex: 1;
+}
+
+.opportunityTitle {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--spark-dark-purple, #230127);
+  margin-bottom: 0.5rem;
+}
+
+.opportunityDescription {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Quick Wins Section */
+.quickWinsSection {
+  margin-bottom: 2rem;
+}
+
+.quickWinsList {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.quickWinItem {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border-left: 3px solid var(--spark-purple, #1f49c9);
+  transition: all 0.3s ease;
+}
+
+.quickWinItem:hover {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(31, 73, 201, 0.08);
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--spark-purple, #1f49c9);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.quickWinContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.quickWinTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--spark-dark-purple, #230127);
+}
+
+.quickWinEffort {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .scoreGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .scoreValue {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .opportunitiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunityCard {
+    gap: 1rem;
+  }
+
+  .opportunityNumber {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .opportunityTitle {
+    font-size: 1rem;
+  }
+
+  .quickWinItem {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .scoreGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .scoreCard {
+    padding: 1.5rem;
+  }
+
+  .scoreValue {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+
+  .opportunityCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .opportunityNumber {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+
+  .quickWinItem {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .checkIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .quickWinTitle {
+    font-size: 0.9375rem;
+  }
+}
