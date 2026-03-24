@@ -7,6 +7,7 @@ import MarketingContextSection from "@/components/sections/MarketingContextSecti
 import RecommendationsSection from "@/components/sections/RecommendationsSection";
 import ProposalBridgeSection from "@/components/sections/ProposalBridgeSection";
 import { PhotoStrip } from "@/components/PhotoStrip";
+import { FadeIn } from "@/components/FadeIn";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,76 @@ export default function Home() {
       <Hero />
 
       <main>
+        {/* How to Read This Audit */}
+        <section
+          style={{
+            backgroundColor: '#f0f4ff',
+            padding: '40px 20px',
+            borderBottom: '1px solid #e5e7eb',
+          }}
+        >
+          <div className="container-spark">
+            <FadeIn>
+              <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <h2
+                  style={{
+                    fontSize: '20px',
+                    fontWeight: '700',
+                    color: '#1f49c9',
+                    marginBottom: '16px',
+                    fontFamily: 'var(--font-heading)',
+                  }}
+                >
+                  How to read this audit
+                </h2>
+                <p
+                  style={{
+                    fontSize: '15px',
+                    color: '#374151',
+                    lineHeight: '1.7',
+                    marginBottom: '16px',
+                    fontFamily: 'var(--font-body)',
+                  }}
+                >
+                  This audit examines three areas of SPARK&apos;s digital marketing: <strong>SEO</strong> (how easily parents find SPARK through Google and other search engines), <strong>PPC</strong> (how effectively SPARK&apos;s paid advertising budget is being spent), and <strong>Marketing Channels</strong> (which platforms and pages are actually driving parent enquiries).
+                </p>
+                <p
+                  style={{
+                    fontSize: '15px',
+                    color: '#374151',
+                    lineHeight: '1.7',
+                    marginBottom: '16px',
+                    fontFamily: 'var(--font-body)',
+                  }}
+                >
+                  Throughout this document, <strong>&quot;conversion&quot;</strong> means a parent completing an enquiry form or starting an application — the key action that turns a website visitor into a prospective enrolment.
+                </p>
+                <div
+                  style={{
+                    display: 'flex',
+                    flexWrap: 'wrap' as const,
+                    gap: '12px',
+                    marginTop: '12px',
+                  }}
+                >
+                  <span style={{ fontSize: '13px', color: '#22c55e', fontWeight: '600', backgroundColor: '#f0fdf4', padding: '4px 12px', borderRadius: '20px', border: '1px solid #bbf7d0' }}>
+                    Green = Strong
+                  </span>
+                  <span style={{ fontSize: '13px', color: '#eab308', fontWeight: '600', backgroundColor: '#fefce8', padding: '4px 12px', borderRadius: '20px', border: '1px solid #fde68a' }}>
+                    Yellow = Needs Attention
+                  </span>
+                  <span style={{ fontSize: '13px', color: '#ef4444', fontWeight: '600', backgroundColor: '#fef2f2', padding: '4px 12px', borderRadius: '20px', border: '1px solid #fecaca' }}>
+                    Red = Urgent
+                  </span>
+                  <span style={{ fontSize: '13px', color: '#3b82f6', fontWeight: '600', backgroundColor: '#eff6ff', padding: '4px 12px', borderRadius: '20px', border: '1px solid #bfdbfe' }}>
+                    Blue = Emerging Opportunity
+                  </span>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* Executive Summary */}
         <ExecutiveSummarySection />
 
@@ -91,7 +162,7 @@ export default function Home() {
                 fontFamily: "var(--font-body)",
               }}
             >
-              Forensic Digital Audit · March 2026 · Built on 12 months of real account data · GSC, GA4, Google Ads, Meta Ads
+              Digital Mini-Audit · March 2026 · Data sources: Google Search Console, Google Analytics 4, Google Ads, Meta Ads (Facebook &amp; Instagram), PageSpeed Insights
             </p>
           </div>
         </div>

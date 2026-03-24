@@ -7,16 +7,16 @@ const MarketingContextSection = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
 
   const channelData = [
-    { name: "Organic TikTok", rate: 7.91, sessions: "2,118", conversions: "168", label: "Hidden gem", color: "#22c55e" },
-    { name: "Broadbrand Social", rate: 7.45, sessions: "3,489", conversions: "260", label: "Top performer", color: "#22c55e" },
-    { name: "Google CPC", rate: 4.4, sessions: "186,000", conversions: "8,184", label: "", color: "#22c55e" },
-    { name: "/virtual-tours page", rate: 4.33, sessions: "4,620", conversions: "200", label: "6x better than /high-schools", color: "#22c55e" },
-    { name: "Bing Organic", rate: 3.46, sessions: "27,977", conversions: "968", label: "Highest organic conv rate", color: "#22c55e" },
+    { name: "Broadbrand Social", rate: 9.54, sessions: "3,322", conversions: "317", label: "Top performer", color: "#22c55e" },
+    { name: "/virtual-tours page", rate: 5.53, sessions: "9,293", conversions: "514", label: "Best-converting page on the site", color: "#22c55e" },
+    { name: "Google Ads (Search)", rate: 4.40, sessions: "185,000", conversions: "8,146", label: "Highest volume paid channel", color: "#22c55e" },
+    { name: "Bing Organic", rate: 3.46, sessions: "27,977", conversions: "969", label: "Highest organic conversion rate", color: "#22c55e" },
     { name: "ChatGPT Referral", rate: 2.65, sessions: "453", conversions: "12", label: "Emerging AI channel", color: "#3b82f6" },
-    { name: "Google Organic", rate: 1.92, sessions: "580,000", conversions: "11,136", label: "", color: "#eab308" },
-    { name: "Meta PPC", rate: 1.1, sessions: "312,000", conversions: "3,432", label: "", color: "#ff4800" },
-    { name: "X/Twitter", rate: 0.23, sessions: "8,700", conversions: "20", label: "", color: "#ef4444" },
-    { name: "TikTok Paid", rate: 0, sessions: "41,527", conversions: "0", label: "41K sessions, zero conversions", color: "#ef4444" },
+    { name: "Google Organic", rate: 1.92, sessions: "197,495", conversions: "3,790", label: "", color: "#eab308" },
+    { name: "TikTok Referral", rate: 1.91, sessions: "4,614", conversions: "88", label: "Organic TikTok content", color: "#eab308" },
+    { name: "Facebook & Instagram Ads", rate: 1.54, sessions: "175,783", conversions: "2,702", label: "84% of ad budget goes here", color: "#ff4800" },
+    { name: "X / Twitter", rate: 0.22, sessions: "13,070", conversions: "29", label: "", color: "#ef4444" },
+    { name: "TikTok Paid Ads", rate: 0, sessions: "41,527", conversions: "0", label: "41K visitors, zero enquiries", color: "#ef4444" },
   ];
 
   const funnelStages = [
@@ -66,7 +66,7 @@ const MarketingContextSection = () => {
                 marginBottom: "8px",
               }}
             >
-              Conversion Rate by Channel — What Actually Works
+              Which channels actually drive parent enquiries?
             </h3>
             <p
               style={{
@@ -76,7 +76,7 @@ const MarketingContextSection = () => {
                 lineHeight: "1.6",
               }}
             >
-              What percentage of visitors from each channel complete an enquiry or application. Higher is better.
+              The percentage of visitors from each channel who complete an enquiry form or start an application. Higher is better — anything above 3% is strong.
             </p>
             <div
               style={{
@@ -144,7 +144,7 @@ const MarketingContextSection = () => {
                       marginBottom: "8px",
                     }}
                   >
-                    {channel.sessions} sessions → {channel.conversions} conversions
+                    {channel.sessions} visitors → {channel.conversions} enquiries
                   </div>
                   {channel.label && (
                     <div
@@ -372,7 +372,7 @@ const MarketingContextSection = () => {
                     letterSpacing: "-0.01em",
                   }}
                 >
-                  The Biggest Leak in the Funnel
+                  Biggest Opportunity
                 </div>
                 <div
                   style={{
@@ -381,11 +381,11 @@ const MarketingContextSection = () => {
                     lineHeight: "1.65",
                   }}
                 >
-                  For every{" "}
+                  71% of parents who start an enquiry form don&apos;t finish it. For every{" "}
                   <strong style={{ color: "#fff" }}>100 parents</strong> who
-                  start an enquiry form, only{" "}
-                  <strong style={{ color: "#ff4800" }}>29 finish it</strong>.
-                  This single fix has more revenue impact than any ad campaign.
+                  begin, only{" "}
+                  <strong style={{ color: "#ff4800" }}>29 complete it</strong>.
+                  This is the single highest-leverage fix available.
                 </div>
               </div>
             </div>
@@ -450,7 +450,7 @@ const MarketingContextSection = () => {
                     marginBottom: "12px",
                   }}
                 >
-                  453 sessions • 2.65% conversion
+                  453 visitors • 2.65% enquiry rate
                 </p>
                 <p
                   style={{
@@ -501,7 +501,7 @@ const MarketingContextSection = () => {
                     marginBottom: "12px",
                   }}
                 >
-                  27,977 sessions • 3.46% conversion
+                  27,977 visitors • 3.46% enquiry rate
                 </p>
                 <p
                   style={{
@@ -510,7 +510,7 @@ const MarketingContextSection = () => {
                     fontWeight: "500",
                   }}
                 >
-                  Free traffic with the highest organic conversion rate on the site
+                  Under-invested — 2x Google Organic&apos;s conversion rate
                 </p>
               </div>
             </div>

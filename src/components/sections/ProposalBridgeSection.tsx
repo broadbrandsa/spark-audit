@@ -6,28 +6,28 @@ import { FadeIn } from '@/components/FadeIn';
 const ProposalBridgeSection: React.FC = () => {
   const themes = [
     {
-      proposal: 'The data proves CPL is costing SPARK leads',
+      proposal: 'The data proves cost-per-lead is costing SPARK leads',
       evidence:
-        'Google Ads delivers leads at R64 (4.40% conv) while Meta instant forms cost R71 with lower intent. The 84/16 budget split favoring Meta means more spend on lower-quality leads. Our proposal shifts measurement from cost-per-lead to cost-per-actual-enrolment.',
+        'Google Ads delivers enquiries at R64 (4.40% conversion) while Facebook & Instagram instant forms cost R71 with lower intent. 84% of budget goes to the more expensive, lower-quality channel.',
       visual: 'CPL → CPA',
     },
     {
-      proposal: 'Instant forms are cheap — but 71% abandon',
+      proposal: 'Instant forms are cheap but 71% of parents abandon them',
       evidence:
-        'Landing page campaigns cost 3x more (R220/lead) but generate higher-intent enquiries. The 71% form abandonment rate confirms what we flagged: the current form experience is losing motivated parents.',
+        'Landing page campaigns cost 3x more (R220/lead) but generate higher-intent enquiries. The 71% form abandonment rate confirms: cheaper leads aren\'t better leads.',
       visual: 'Forms',
     },
     {
-      proposal: '41K sessions. Zero tracked conversions. CRM fixes this.',
+      proposal: '41K visitors. Zero tracked enquiries. CRM integration fixes this.',
       evidence:
-        'TikTok Paid drove 41,527 sessions with zero tracked conversions. Without CRM data flowing back to ad platforms, campaigns optimise for clicks — not enrolments. Our CRM integration closes this loop.',
-      visual: 'CRM ↔',
+        'TikTok Paid drove 41,527 visitors with zero tracked conversions. Without CRM data flowing back to ad platforms, campaigns can\'t optimise for actual enrolments.',
+      visual: 'CRM → Ads',
     },
     {
-      proposal: 'Your warmest audiences convert 7x better',
+      proposal: 'Warm audiences convert 5x better than cold ads',
       evidence:
-        'Organic TikTok converts at 7.91% vs paid at 0%. Broadbrand social at 7.45%. The pattern is unmistakable: warm, engaged audiences convert at multiples of cold traffic. Our retention system builds this at scale.',
-      visual: 'Retain',
+        'Broadbrand social converts at 9.54% vs paid TikTok at 0%. The highest conversions come from warm, engaged audiences — exactly what a parent retention system builds.',
+      visual: 'Retention',
     },
   ];
 
@@ -189,7 +189,7 @@ const ProposalBridgeSection: React.FC = () => {
                 margin: '0 0 32px 0',
               }}
             >
-              30 actions. We&apos;re ready to start this week.
+              The data is clear. Let&apos;s act on it.
             </h3>
 
             {/* CTA Buttons */}

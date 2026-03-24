@@ -23,25 +23,25 @@ interface QuickWin {
 
 const scoreCards: ScoreCard[] = [
   {
-    label: 'SEO Health',
+    label: 'SEO Health (Search Visibility)',
     score: '33/70',
     status: 'Grade D',
     tone: 'red',
   },
   {
-    label: 'PPC Efficiency',
+    label: 'PPC Efficiency (Paid Ads ROI)',
     score: '5/10',
     status: 'Needs Work',
     tone: 'orange',
   },
   {
-    label: 'Marketing Mix',
+    label: 'Marketing Mix (Channel Balance)',
     score: '6/10',
     status: 'Moderate',
     tone: 'blue',
   },
   {
-    label: 'Combined',
+    label: 'Combined Score',
     score: '44/90',
     status: 'Grade C-',
     tone: 'blue',
@@ -50,25 +50,25 @@ const scoreCards: ScoreCard[] = [
 
 const opportunities: Opportunity[] = [
   {
-    title: 'Fix the CTR crisis',
+    title: 'Fix the click-through rate crisis',
     description:
-      '/primary-schools and /high-schools have 4.7M impressions at 0.43% CTR',
+      'SPARK\'s school pages appear 4.7 million times in Google results but only 0.43% of parents click through — that\'s thousands of missed visits',
   },
   {
-    title: 'TikTok paid zero-conversion problem',
-    description: '41,527 sessions with zero conversions',
+    title: 'TikTok Paid: 41K visitors, zero enquiries',
+    description: '41,527 visitors from paid TikTok ads resulted in zero tracked enquiries or applications',
   },
   {
-    title: 'Deploy CDN to pass Core Web Vitals',
-    description: 'TTFB at 1.4s (7x target)',
+    title: 'Speed up the website with a CDN',
+    description: 'The site takes 1.4 seconds to start loading (7x slower than the target). A CDN (content delivery network) caches the site closer to visitors for faster loads.',
   },
   {
-    title: 'Restructure Meta Ads around the funnel',
-    description: 'R2.75M across 80+ campaigns',
+    title: 'Restructure Facebook & Instagram Ads',
+    description: 'R2.75M spread across 80+ campaigns with no clear funnel structure — consolidation would improve efficiency',
   },
   {
-    title: 'Build dedicated non-brand landing pages',
-    description: 'Invisible for "private schools Johannesburg"',
+    title: 'Create dedicated landing pages for key searches',
+    description: 'Parents searching "private schools Johannesburg" can\'t find SPARK — dedicated pages would capture this high-intent traffic',
   },
 ];
 
@@ -90,8 +90,8 @@ const quickWins: QuickWin[] = [
     effort: 'High impact',
   },
   {
-    title: 'Promote /virtual-tours',
-    effort: '4.33% conversion rate',
+    title: 'Promote /virtual-tours page',
+    effort: '5.53% conversion rate — highest on the site',
   },
 ];
 
@@ -104,7 +104,7 @@ export default function ExecutiveSummarySection() {
             <span className="section-label">Executive Summary</span>
           </div>
 
-          <h2 className={styles.heading}>A C-minus. Here&apos;s how we fix it.</h2>
+          <h2 className={styles.heading}>What 12 months of data tells us</h2>
 
           {/* Score Cards Grid */}
           <div className={styles.scoreGrid}>

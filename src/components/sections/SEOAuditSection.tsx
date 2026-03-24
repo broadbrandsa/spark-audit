@@ -21,39 +21,39 @@ interface TabContent {
 const scoreMetrics: ScoreMetric[] = [
   { label: 'Site Speed', score: 4, total: 10 },
   { label: 'Page Quality', score: 5, total: 10 },
-  { label: 'Content Depth', score: 6, total: 10 },
-  { label: 'Authority & Links', score: 4, total: 10 },
-  { label: 'Competitive Edge', score: 4, total: 10 },
-  { label: 'Topic Coverage', score: 6, total: 10 },
+  { label: 'Content Strength', score: 6, total: 10 },
+  { label: 'External Links', score: 4, total: 10 },
+  { label: 'Competitor Position', score: 4, total: 10 },
+  { label: 'Content Gaps', score: 6, total: 10 },
 ];
 
 const tabContents: { [key: string]: TabContent } = {
   performance: {
-    title: 'Parents Are Leaving Before the Page Loads',
-    metric: 'TTFB: 1.4s (7x target)',
+    title: 'The Website Is Too Slow',
+    metric: '1.4 seconds to start loading (target: 0.2s)',
     description:
-      'The site takes 1.4 seconds just to start responding — 7x slower than the 200ms target. On mobile, where 74.4% of SPARK\'s traffic comes from, it\'s even worse. Lighthouse scores 52/100 on mobile. The total page weight is 25.6MB. A CDN deployment fixes this in days, not weeks.',
+      'The site takes 1.4 seconds before it even begins to appear — 7x slower than Google\'s benchmark. Google\'s speed test (Lighthouse) scores the site 56 out of 100. The total page size is 25.6MB, and 74.4% of visitors are on mobile where this slow speed is most painful. Slow sites lose visitors and rank lower in search results.',
     impact: 'Critical',
   },
   'on-page': {
-    title: '4.7 Million Impressions, Almost No Clicks',
-    metric: '0.38% CTR',
+    title: 'Parents See SPARK in Google But Don\'t Click',
+    metric: '0.38% click-through rate',
     description:
-      'SPARK\'s four main pages appear in search results 4.7 million times — but only 0.38% of those parents click through. That\'s roughly 4.68 million missed opportunities. The fix: rewrite title tags and meta descriptions to match what parents actually search for.',
+      '4 key school pages appear in Google results 4.7 million times, but only 0.38% of parents click through to the site. That means for every 1,000 times SPARK appears in search results, only about 4 parents click. The page titles and descriptions shown in Google aren\'t compelling enough to drive clicks.',
     impact: 'Critical',
   },
   content: {
-    title: 'Strong Content, Weak Trust Signals',
+    title: 'Content Trust Signals Are Weak',
     metric: 'Trust Score: 6/10',
     description:
-      'The 80+ blog posts and T4 Award are genuine authority signals — Google rewards this. But there are no author bios (Google needs to know who wrote the content), and 71% of parents who start a form never finish it. The content gets them there; the experience loses them.',
+      'Strengths: 80+ blog posts and T4 Award recognition give SPARK some credibility online. Weaknesses: No author bios on articles (Google rewards content with named, credible authors), and 71% of parents who start an enquiry form abandon it before finishing — suggesting the content isn\'t building enough confidence to complete the action.',
     impact: 'High',
   },
   keywords: {
-    title: 'Page 1 Is Within Reach',
-    metric: '145K impressions',
+    title: 'Parents Searching "Near Me" Can\'t Find SPARK',
+    metric: '145,000 search appearances',
     description:
-      'SPARK ranks position 7-9 for high-value "near me" searches — just outside where parents actually click. These keywords represent 145K impressions from parents actively searching for a school. Moving from position 8 to position 3 typically doubles click-through rates.',
+      'When parents search "private schools near me" or "best schools near me," SPARK appears but sits on page 2 of Google (positions 7–9). These are parents actively looking for a school right now. Moving from page 2 to page 1 would dramatically increase parent visits and enquiries.',
     impact: 'High',
   },
 };
@@ -136,8 +136,8 @@ export default function SEOAuditSection() {
           </div>
 
           <div className={styles.headingContainer}>
-            <h2 className={styles.heading}>SPARK is invisible for the searches that matter most</h2>
-            <p className={styles.subtitle}>SEO Health: 33 out of 70 — Grade D</p>
+            <h2 className={styles.heading}>SEO Health: Grade D</h2>
+            <p className={styles.subtitle}>SPARK is invisible for the searches that matter most</p>
           </div>
 
           {/* Score Breakdown */}

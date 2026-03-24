@@ -48,7 +48,7 @@ export default function PPCAuditSection() {
                     marginBottom: '1.5rem',
                   }}
                 >
-                  The Full Picture
+                  Google Ads vs Facebook &amp; Instagram: The Full Picture
                 </h3>
               </div>
 
@@ -1032,7 +1032,7 @@ export default function PPCAuditSection() {
                     margin: '0.5rem 0 0 0',
                   }}
                 >
-                  <strong>Broadbrand&apos;s own campaigns outperform</strong> most paid media. The{' '}
+                  <strong>Broadbrand&apos;s own campaigns outperform</strong> most paid advertising. The{' '}
                   <code
                     style={{
                       background: 'rgba(255,72,0,0.15)',
@@ -1045,8 +1045,9 @@ export default function PPCAuditSection() {
                   >
                     broadbrand_social
                   </code>{' '}
-                  campaign achieves a <strong style={{ color: '#FF4800' }}>7.45% conversion rate</strong> — the{' '}
-                  <strong>highest of any paid campaign at scale</strong>. The message is clear: internal expertise converts better than media spend alone. This is the model we&apos;d scale across every channel in month one.
+                  campaign achieves a <strong style={{ color: '#FF4800' }}>9.54% conversion rate</strong> — the{' '}
+                  <strong>highest of any campaign at scale</strong>. The message is clear: internal expertise converts better
+                  than media spend alone. This is the model we&apos;d scale across every channel.
                 </p>
               </div>
             </div>

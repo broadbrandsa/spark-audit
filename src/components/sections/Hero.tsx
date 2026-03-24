@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const stats = [
   { value: "176,821", label: "Organic Clicks Analysed" },
-  { value: "R3.28M", label: "Ad Spend Under the Microscope" },
+  { value: "R3.28M", label: "Ad Spend Reviewed" },
   { value: "33 → 70", label: "SEO Score Target" },
   { value: "30", label: "Revenue-Driving Actions" },
   { value: "4.7M", label: "Impressions Not Converting" },
@@ -104,7 +104,8 @@ export function Hero() {
               letterSpacing: "-0.04em",
             }}
           >
-            R3.28M AUDITED.
+            R3.28M IN AD SPEND.{" "}
+            <span style={{ color: "#ff4800" }}>30 ACTIONS TO MAKE IT WORK HARDER.</span>
           </h1>
         </div>
 
@@ -113,13 +114,13 @@ export function Hero() {
             className="font-bold leading-none tracking-tight mb-10"
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "clamp(1.2rem, 3.5vw, 2.25rem)",
-              color: "rgba(255,255,255,0.22)",
+              fontSize: "clamp(1.1rem, 3vw, 1.75rem)",
+              color: "rgba(255,255,255,0.45)",
               lineHeight: 0.92,
               letterSpacing: "-0.04em",
             }}
           >
-            30 ACTIONS TO MAKE IT WORK HARDER.
+            A forensic look at what&apos;s working — and what isn&apos;t.
           </p>
         </div>
 
@@ -133,7 +134,7 @@ export function Hero() {
               fontSize: "1.125rem",
             }}
           >
-            We audited every channel, every campaign, every conversion path — from the team already inside the account. Here&apos;s what 12 months of data reveals.
+            An SEO, paid advertising &amp; marketing audit prepared by Broadbrand — the team already inside SPARK&apos;s accounts, with 12 months of real performance data.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -142,7 +143,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold tracking-wider uppercase transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5"
               style={{ background: "#ff4800", color: "#fff" }}
             >
-              See the Findings
+              See What We Found
             </a>
             <a
               href="https://sparkrfq.vercel.app/"
