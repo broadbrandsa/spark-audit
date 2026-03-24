@@ -60,40 +60,47 @@ const tabContents: { [key: string]: TabContent } = {
 
 
 const performanceMetrics = [
-  { metric: 'Core Web Vitals', status: 'FAILED', details: 'FCP, LCP, CLS not optimized' },
+  { metric: 'Core Web Vitals', status: 'FAILED', details: 'LCP >2.5s on 63 URLs (mobile)' },
   {
     metric: 'Time to First Byte',
     status: '1.4s',
     details: 'Target: 200ms (7x over)',
   },
-  { metric: 'Lighthouse Score', status: '56/100', details: 'Mobile: 52/100' },
-  { metric: 'Page Weight', status: '25.6MB', details: '74.4% mobile traffic' },
+  { metric: 'Lighthouse (Mobile)', status: '56/100', details: '74.4% of visitors are on mobile' },
+  { metric: 'Lighthouse (Desktop)', status: '93/100', details: 'Desktop is fine — the problem is mobile' },
+  { metric: 'Page Weight', status: '25.6MB', details: 'Blocks mobile rendering completely' },
 ];
 
 const ctrCrisisData = [
   {
     page: '/primary-schools',
-    impressions: '2.4M',
-    clicks: '9,120',
-    ctr: '0.38%',
+    impressions: '1.38M',
+    clicks: '6,259',
+    ctr: '0.45%',
   },
   {
     page: '/high-schools',
-    impressions: '2.3M',
-    clicks: '8,740',
-    ctr: '0.38%',
+    impressions: '1.36M',
+    clicks: '5,608',
+    ctr: '0.41%',
   },
   {
-    page: '/independent-schools',
-    impressions: '1.5M',
-    clicks: '5,700',
-    ctr: '0.38%',
+    page: '/contact',
+    impressions: '1.13M',
+    clicks: '4,571',
+    ctr: '0.40%',
   },
   {
-    page: '/boarding-schools',
-    impressions: '900K',
-    clicks: '3,420',
-    ctr: '0.38%',
+    page: '/apply',
+    impressions: '948K',
+    clicks: '4,205',
+    ctr: '0.44%',
+  },
+  {
+    page: '/open-days',
+    impressions: '823K',
+    clicks: '1,374',
+    ctr: '0.17%',
   },
 ];
 

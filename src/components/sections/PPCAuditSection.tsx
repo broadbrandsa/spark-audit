@@ -972,6 +972,45 @@ export default function PPCAuditSection() {
             </FadeIn>
           </div>
 
+          {/* Budget Waste Spotlight */}
+          <FadeIn>
+            <div
+              style={{
+                marginTop: '2rem',
+                padding: '1.5rem 2rem',
+                borderRadius: '8px',
+                background: 'rgba(239, 68, 68, 0.08)',
+                border: '1px solid rgba(239, 68, 68, 0.2)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1rem', color: '#ef4444', fontWeight: 700, margin: 0 }}>
+                  Campaign Spending Spotlight
+                </h3>
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#ef4444', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Worst Performer</p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Switch to SPARK</p>
+                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R61,419 spent → 153 leads = <strong style={{ color: '#ef4444' }}>R401/lead</strong></p>
+                </div>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#ef4444', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Also Overspending</p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Phase Campaign</p>
+                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R66,447 spent → 159 leads = <strong style={{ color: '#ef4444' }}>R418/lead</strong></p>
+                </div>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#22c55e', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Best Performer</p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Schools | Instant Forms</p>
+                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R144,148 spent → 2,732 leads = <strong style={{ color: '#22c55e' }}>R53/lead</strong></p>
+                </div>
+              </div>
+              <p style={{ fontSize: '0.85rem', color: '#374151', marginTop: '1rem', lineHeight: 1.6, marginBottom: 0 }}>
+                The cost-per-lead gap between the best and worst Meta campaigns is <strong>7.5x</strong>. Pausing Switch to SPARK and Phase Campaign alone would free up R127,866 — enough to generate <strong>2,412 additional leads</strong> at the best performer&apos;s rate.
+              </p>
+            </div>
+          </FadeIn>
+
           {/* 4. KEY INSIGHT CALLOUT */}
           <FadeIn>
             <div
@@ -1049,6 +1088,11 @@ export default function PPCAuditSection() {
                   <strong>highest of any campaign at scale</strong>. The message is clear: internal expertise converts better
                   than media spend alone. This is the model we&apos;d scale across every channel.
                 </p>
+                <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,72,0,0.05)', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(0,0,0,0.7)', margin: 0, lineHeight: 1.6 }}>
+                    <strong>WhatsApp update:</strong> WhatsApp conversation campaigns generated 2,660 conversations at R92 each (R244,295 total). Video-format WhatsApp ads significantly outperform image-format — R64/conversation vs R111/conversation. If SPARK enables WhatsApp as an enquiry channel (see our proposal), this becomes a direct lead source, not just a conversation starter.
+                  </p>
+                </div>
               </div>
             </div>
           </FadeIn>

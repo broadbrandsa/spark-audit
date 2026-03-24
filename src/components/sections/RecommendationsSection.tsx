@@ -71,6 +71,8 @@ const tiers: Tier[] = [
       { number: 21, title: 'Add breadcrumb navigation markup', description: 'Helps Google understand site structure and shows page hierarchy in search results' },
       { number: 22, title: 'Add FAQ sections with structured data', description: 'Common parent questions appear directly in Google results — drives clicks without paid ads' },
       { number: 23, title: 'Expand video content for YouTube', description: 'YouTube is the 2nd largest search engine — virtual tours and parent testimonials perform well here' },
+      { number: 24, title: 'Implement UTM tracking standardisation', description: 'Broadbrand and AdClick use incompatible UTM formats — standardising enables accurate cross-agency and cross-channel comparison' },
+      { number: 25, title: 'Create a dedicated /careers page', description: '7,465 organic clicks (4.2%) are job seekers searching "spark vacancies" — a careers page captures this traffic and removes it from parent conversion metrics' },
     ],
   },
   {
@@ -81,13 +83,13 @@ const tiers: Tier[] = [
     borderColor: '#801078',
     badgeColor: '#801078',
     items: [
-      { number: 24, title: 'Build content clusters around key topics', description: 'Groups of related articles (e.g., "choosing a school" hub) that establish SPARK as a thought leader and boost search rankings' },
-      { number: 25, title: 'Launch digital PR campaign', description: 'Earn mentions and links from education publications — builds Google trust signals and brand awareness' },
-      { number: 26, title: 'Promote matric results content', description: 'Seasonal search spike every January — have content ready to capture parents researching school performance' },
-      { number: 27, title: 'Run YouTube video ad campaigns', description: 'Video ads showcasing campus life and virtual tours — reaches parents earlier in their school search journey' },
-      { number: 28, title: 'Optimise for AI search (ChatGPT, Gemini)', description: 'ChatGPT referrals already convert at 2.65% — ensure SPARK appears in AI-generated school recommendations' },
-      { number: 29, title: 'Expand digital presence to SADC markets', description: 'Target parents in neighbouring countries searching for SA private schools — new enrolment pipeline' },
-      { number: 30, title: 'Build strategic partnerships for backlinks', description: 'Partner with education bodies and parenting sites — each quality link improves Google ranking authority' },
+      { number: 26, title: 'Build content clusters around key topics', description: 'Groups of related articles (e.g., "choosing a school" hub) that establish SPARK as a thought leader and boost search rankings' },
+      { number: 27, title: 'Launch digital PR campaign', description: 'Earn mentions and links from education publications — builds Google trust signals and brand awareness' },
+      { number: 28, title: 'Promote matric results content', description: 'Seasonal search spike every January — have content ready to capture parents researching school performance' },
+      { number: 29, title: 'Run YouTube video ad campaigns', description: 'Video ads showcasing campus life and virtual tours — reaches parents earlier in their school search journey' },
+      { number: 30, title: 'Optimise for AI search (ChatGPT, Gemini)', description: 'ChatGPT referrals already convert at 2.65% — ensure SPARK appears in AI-generated school recommendations' },
+      { number: 31, title: 'Expand digital presence to SADC markets', description: '875 organic clicks already coming from 12 SADC countries — targeted content for international parents would convert existing demand' },
+      { number: 32, title: 'Build strategic partnerships for backlinks', description: 'Partner with education bodies and parenting sites — each quality link improves Google ranking authority' },
     ],
   },
 ];
@@ -144,7 +146,7 @@ export default function RecommendationsSection() {
               lineHeight: '1.2',
             }}
           >
-            30 actions. 4 phases. Starts this week.
+            32 actions. 4 phases. Starts this week.
           </h2>
 
           {/* Tiers Container */}

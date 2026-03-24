@@ -93,6 +93,14 @@ const quickWins: QuickWin[] = [
     title: 'Promote /virtual-tours page',
     effort: '5.53% conversion rate — highest on the site',
   },
+  {
+    title: 'Fix 2 URL slug typos ("pirmary" → "primary")',
+    effort: '5 min + 301 redirects — 154K impressions affected',
+  },
+  {
+    title: 'Set up file download remarketing',
+    effort: '62,031 high-intent parent actions going un-nurtured',
+  },
 ];
 
 export default function ExecutiveSummarySection() {

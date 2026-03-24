@@ -4,6 +4,7 @@ import ExecutiveSummarySection from "@/components/sections/ExecutiveSummarySecti
 import SEOAuditSection from "@/components/sections/SEOAuditSection";
 import PPCAuditSection from "@/components/sections/PPCAuditSection";
 import MarketingContextSection from "@/components/sections/MarketingContextSection";
+import DeepDiveInsightsSection from "@/components/sections/DeepDiveInsightsSection";
 import RecommendationsSection from "@/components/sections/RecommendationsSection";
 import ProposalBridgeSection from "@/components/sections/ProposalBridgeSection";
 import UnlaunchedProposalsSection from "@/components/sections/UnlaunchedProposalsSection";
@@ -118,6 +119,9 @@ export default function Home() {
 
         {/* Marketing Context */}
         <MarketingContextSection />
+
+        {/* Deep Dive Insights */}
+        <DeepDiveInsightsSection />
 
         {/* Recommendations */}
         <RecommendationsSection />

@@ -3,12 +3,14 @@
 import React from 'react';
 import { FadeIn } from '@/components/FadeIn';
 
+import { ExternalLink } from 'lucide-react';
+
 interface Proposal {
   title: string;
   status: string;
   description: string;
   impact: string;
-  icon: string;
+  link?: { url: string; label: string };
 }
 
 const proposals: Proposal[] = [
@@ -18,7 +20,7 @@ const proposals: Proposal[] = [
     description:
       'Consolidate Meta from 80+ campaigns to ~15 with proper funnel structure (top-of-funnel awareness → mid-funnel consideration → bottom-of-funnel conversion). Introduce parent testimonials, founder story ads, and value-driven creative at the top of funnel. Rebalance budget toward Google Ads which delivers enquiries at R64 vs Meta\'s R71.',
     impact: 'Projected 30–50% reduction in cost-per-lead through better funnel alignment and creative rotation',
-    icon: '📊',
+    link: { url: 'https://sparkrfq.vercel.app/', label: 'View in Full Proposal' },
   },
   {
     title: 'CRM-to-Platform Feedback Loop',
@@ -26,7 +28,7 @@ const proposals: Proposal[] = [
     description:
       'Connect SPARK\'s CRM to ad platforms (Meta, Google, TikTok) so campaigns can optimise toward actual enrolments — not just form fills. Currently there is no data flowing back on which leads convert to enrolments, making it impossible to distinguish a R64 lead that enrols from one that doesn\'t.',
     impact: 'Enables campaign optimisation based on lead quality, not just volume — the single biggest efficiency unlock available',
-    icon: '🔄',
+    link: { url: 'https://sparkrfq.vercel.app/', label: 'View in Full Proposal' },
   },
   {
     title: 'Enhanced WhatsApp Integration',
@@ -34,7 +36,7 @@ const proposals: Proposal[] = [
     description:
       'Grade + school pre-fill, smart redirects, and conversion tracking via WhatsApp. Parents in South Africa overwhelmingly prefer WhatsApp — offering it as an enquiry channel alongside forms would capture parents who abandon the current 71%-dropout form process.',
     impact: 'Directly addresses the 71% form abandonment bottleneck by offering parents their preferred communication channel',
-    icon: '💬',
+    link: { url: 'https://sparkrfq.vercel.app/', label: 'View in Full Proposal' },
   },
   {
     title: 'AI-Optimised Display + DOOH Billboards',
@@ -42,7 +44,7 @@ const proposals: Proposal[] = [
     description:
       'Integrate AI-optimised display ads with Digital Out-of-Home (DOOH) billboards near SPARK campuses across Gauteng and Pretoria. AI-driven audience targeting continuously analyses user behaviour to determine the best-performing creatives, then extends those winning ads to physical billboard locations at peak commute times. Locations identified include Alberton/Meyersdal, Kyalami/Midrand, Grayston/Sandton, Cresta, Randburg, Tembisa, Soweto, Benmore, Fourways, Roodepoort, Bruma/Eastgate, The Glen, Kempton Park, Wynberg/Sandton, and Prinshof/Pretoria.',
     impact: 'Omnichannel consistency between digital and physical — parents see the same messaging online and on their commute to school',
-    icon: '📍',
+    link: { url: 'https://sparkrfq.vercel.app/', label: 'View DOOH Proposal' },
   },
   {
     title: 'Newsroom AI Brand Stories',
@@ -50,7 +52,7 @@ const proposals: Proposal[] = [
     description:
       'Deploy Newsroom AI\'s Brand Stories platform to create immersive, mobile-first story experiences for SPARK — think Instagram Stories but on the open web, embeddable anywhere and distributable programmatically. Brand Stories achieve up to 15x higher engagement than standard display ads. Content formats include video scenes, interactive polls, shoppable CTAs, and swipeable campus tours. These stories can be amplified across premium publisher inventory via programmatic distribution, extending SPARK\'s reach beyond social media into news sites, parenting portals, and education content.',
     impact: 'A new creative format that meets parents where they browse — immersive, mobile-native, and measurable across the open web',
-    icon: '📱',
+    link: { url: 'https://brandstories.nws.ai/', label: 'View Brand Stories Platform' },
   },
 ];
 
@@ -159,16 +161,15 @@ export default function UnlaunchedProposalsSection() {
                   (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255, 255, 255, 0.08)';
                 }}
               >
-                {/* Icon + Status */}
+                {/* Status */}
                 <div
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'space-between',
+                    justifyContent: 'flex-end',
                     marginBottom: '16px',
                   }}
                 >
-                  <span style={{ fontSize: '32px' }}>{proposal.icon}</span>
                   <span
                     style={{
                       fontSize: '11px',
@@ -247,6 +248,32 @@ export default function UnlaunchedProposalsSection() {
                     {proposal.impact}
                   </p>
                 </div>
+
+                {/* Link */}
+                {proposal.link && (
+                  <a
+                    href={proposal.link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginTop: '16px',
+                      fontSize: '13px',
+                      fontWeight: '600',
+                      color: '#ff4800',
+                      textDecoration: 'none',
+                      fontFamily: 'var(--font-body)',
+                      transition: 'opacity 0.2s ease',
+                    }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.opacity = '0.8'; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.opacity = '1'; }}
+                  >
+                    {proposal.link.label}
+                    <ExternalLink size={14} strokeWidth={2} />
+                  </a>
+                )}
               </div>
             </FadeIn>
           ))}

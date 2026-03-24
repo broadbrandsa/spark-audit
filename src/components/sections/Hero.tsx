@@ -7,7 +7,7 @@ const stats = [
   { value: "176,821", label: "Organic Clicks Analysed" },
   { value: "R3.28M", label: "Ad Spend Reviewed" },
   { value: "33 → 70", label: "SEO Score Target" },
-  { value: "30", label: "Revenue-Driving Actions" },
+  { value: "32", label: "Revenue-Driving Actions" },
   { value: "4.7M", label: "Impressions Not Converting" },
 ];
 
@@ -105,7 +105,7 @@ export function Hero() {
             }}
           >
             R3.28M IN AD SPEND.{" "}
-            <span style={{ color: "#ff4800" }}>30 ACTIONS TO MAKE IT WORK HARDER.</span>
+            <span style={{ color: "#ff4800" }}>32 ACTIONS TO MAKE IT WORK HARDER.</span>
           </h1>
         </div>
 
