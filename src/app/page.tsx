@@ -41,6 +41,27 @@ export default function Home() {
                 >
                   How to read this audit
                 </h2>
+                <div
+                  style={{
+                    backgroundColor: '#fff',
+                    border: '1px solid #e5e7eb',
+                    borderRadius: '10px',
+                    padding: '20px 24px',
+                    marginBottom: '24px',
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: '14px',
+                      color: '#6b7280',
+                      lineHeight: '1.7',
+                      margin: '0',
+                      fontFamily: 'var(--font-body)',
+                    }}
+                  >
+                    <strong style={{ color: '#374151' }}>A note on transparency:</strong> Broadbrand is SPARK&apos;s current digital agency — so yes, we&apos;re auditing our own work. We&apos;ve approached this exactly as we would an external audit: same methodology, same scoring, same honesty. We have not used inside knowledge of current strategies or campaigns to influence the findings — the data speaks for itself and we wanted this report to be completely objective. The difference is that we have direct access to SPARK&apos;s Google Analytics, Search Console, and Meta Ads data — which means every number in this document is verified, not estimated. We believe the best case for keeping a partner is showing you we know where the gaps are and already have a plan to close them.
+                  </p>
+                </div>
                 <p
                   style={{
                     fontSize: '15px',

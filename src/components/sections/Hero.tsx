@@ -39,7 +39,7 @@ export function Hero() {
         }}
       >
         <Image
-          src="/images/IMG_1853_EDITED.JPG"
+          src="/images/IMG_1561_EDITED.JPG"
           alt="SPARK Schools students in classroom"
           fill
           className="object-cover"

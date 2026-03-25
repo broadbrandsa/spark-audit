@@ -195,8 +195,9 @@ const MarketingContextSection = () => {
             <div style={{ maxWidth: "820px", margin: "0 auto" }}>
               {(() => {
                 // Calculate widths — use cube-root scale so smaller stages stay readable
+                // Round to 2 decimal places to prevent SSR/client hydration mismatch
                 const widths = funnelStages.map((s) =>
-                  Math.max(28, Math.pow(s.count / maxCount, 0.38) * 100)
+                  Math.round(Math.max(28, Math.pow(s.count / maxCount, 0.38) * 100) * 100) / 100
                 );
                 const stageColors = [
                   "#1f49c9", // Page View — primary blue
@@ -216,15 +217,17 @@ const MarketingContextSection = () => {
                   const color = stageColors[i];
 
                   // Trapezoid clip path: wider top, narrower bottom
-                  const topLeft = (100 - topW) / 2;
-                  const topRight = topLeft + topW;
-                  const botLeft = (100 - botW) / 2;
-                  const botRight = botLeft + botW;
+                  // Round all values to 2 decimal places for SSR/client consistency
+                  const r = (v: number) => Math.round(v * 100) / 100;
+                  const topLeft = r((100 - topW) / 2);
+                  const topRight = r(topLeft + topW);
+                  const botLeft = r((100 - botW) / 2);
+                  const botRight = r(botLeft + botW);
                   const clipPath = `polygon(${topLeft}% 0%, ${topRight}% 0%, ${botRight}% 100%, ${botLeft}% 100%)`;
 
                   // Connector trapezoid between this stage's bottom and next stage's top
-                  const connBotLeft = (100 - nextW) / 2;
-                  const connBotRight = connBotLeft + nextW;
+                  const connBotLeft = r((100 - nextW) / 2);
+                  const connBotRight = r(connBotLeft + nextW);
                   const connClip = `polygon(${botLeft}% 0%, ${botRight}% 0%, ${connBotRight}% 100%, ${connBotLeft}% 100%)`;
 
                   return (
@@ -395,16 +398,6 @@ const MarketingContextSection = () => {
         {/* Emerging Signals */}
         <FadeIn>
           <div>
-            <h3
-              style={{
-                fontSize: "20px",
-                fontWeight: "600",
-                color: "#000",
-                marginBottom: "24px",
-              }}
-            >
-              Channels Most Agencies Would Miss
-            </h3>
             <div
               style={{
                 display: "grid",

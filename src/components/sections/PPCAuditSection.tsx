@@ -979,8 +979,8 @@ export default function PPCAuditSection() {
                 marginTop: '2rem',
                 padding: '1.5rem 2rem',
                 borderRadius: '8px',
-                background: 'rgba(239, 68, 68, 0.08)',
-                border: '1px solid rgba(239, 68, 68, 0.2)',
+                background: 'rgba(239, 68, 68, 0.12)',
+                border: '1px solid rgba(239, 68, 68, 0.25)',
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
@@ -989,24 +989,24 @@ export default function PPCAuditSection() {
                 </h3>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
-                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.06)', borderRadius: '6px' }}>
                   <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#ef4444', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Worst Performer</p>
-                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Switch to SPARK</p>
-                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R61,419 spent → 153 leads = <strong style={{ color: '#ef4444' }}>R401/lead</strong></p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>Switch to SPARK</p>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', margin: 0 }}>R61,419 spent → 153 leads = <strong style={{ color: '#ef4444' }}>R401/lead</strong></p>
                 </div>
-                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.06)', borderRadius: '6px' }}>
                   <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#ef4444', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Also Overspending</p>
-                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Phase Campaign</p>
-                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R66,447 spent → 159 leads = <strong style={{ color: '#ef4444' }}>R418/lead</strong></p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>Phase Campaign</p>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', margin: 0 }}>R66,447 spent → 159 leads = <strong style={{ color: '#ef4444' }}>R418/lead</strong></p>
                 </div>
-                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.6)', borderRadius: '6px' }}>
+                <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.06)', borderRadius: '6px' }}>
                   <p style={{ fontSize: '0.75rem', fontWeight: 600, color: '#22c55e', textTransform: 'uppercase' as const, letterSpacing: '0.5px', margin: '0 0 4px 0' }}>Best Performer</p>
-                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#111', margin: '0 0 2px 0' }}>Schools | Instant Forms</p>
-                  <p style={{ fontSize: '0.85rem', color: '#4b5563', margin: 0 }}>R144,148 spent → 2,732 leads = <strong style={{ color: '#22c55e' }}>R53/lead</strong></p>
+                  <p style={{ fontSize: '1rem', fontWeight: 700, color: '#fff', margin: '0 0 2px 0' }}>Schools | Instant Forms</p>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', margin: 0 }}>R144,148 spent → 2,732 leads = <strong style={{ color: '#22c55e' }}>R53/lead</strong></p>
                 </div>
               </div>
-              <p style={{ fontSize: '0.85rem', color: '#374151', marginTop: '1rem', lineHeight: 1.6, marginBottom: 0 }}>
-                The cost-per-lead gap between the best and worst Meta campaigns is <strong>7.5x</strong>. Pausing Switch to SPARK and Phase Campaign alone would free up R127,866 — enough to generate <strong>2,412 additional leads</strong> at the best performer&apos;s rate.
+              <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.75)', marginTop: '1rem', lineHeight: 1.6, marginBottom: 0 }}>
+                The cost-per-lead gap between the best and worst Meta campaigns is <strong style={{ color: '#fff' }}>7.5x</strong>. Pausing Switch to SPARK and Phase Campaign alone would free up R127,866 — enough to generate <strong style={{ color: '#fff' }}>2,412 additional leads</strong> at the best performer&apos;s rate.
               </p>
             </div>
           </FadeIn>

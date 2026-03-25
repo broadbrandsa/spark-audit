@@ -12,7 +12,6 @@ import {
   DollarSign,
   AlertTriangle,
   Smartphone,
-  CalendarX,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -97,14 +96,6 @@ const insights: Insight[] = [
     metric: 'Desktop 93 vs Mobile 56',
     severity: 'critical',
   },
-  {
-    icon: CalendarX,
-    title: '/open-days: 823K impressions, 0.17% CTR — worst page on the site',
-    description:
-      'The Open Days page appears in Google search results 823,294 times but only 0.17% of parents click through — that\'s 1,374 clicks from nearly a million impressions. The page title and meta description are not compelling enough for time-sensitive event content. This single page fix could unlock thousands of additional parent visits.',
-    metric: '823K impressions → 0.17% CTR',
-    severity: 'critical',
-  },
 ];
 
 function getSeverityStyles(severity: string) {
@@ -162,7 +153,7 @@ export default function DeepDiveInsightsSection() {
                 fontFamily: 'var(--font-heading)',
               }}
             >
-              10 findings most audits wouldn&apos;t catch
+              9 findings from analytics reports
             </h2>
             <p
               style={{

@@ -112,38 +112,46 @@
 }
 
 .tabsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  background-color: white;
-  border-radius: 12px;
-  padding: 0.75rem;
-  border: 1px solid rgba(200, 218, 227, 0.4);
-  margin-bottom: 2rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  background-color: white !important;
+  border-radius: 12px !important;
+  padding: 0.75rem !important;
+  border: 1px solid rgba(200, 218, 227, 0.4) !important;
+  margin-bottom: 2rem !important;
+  height: auto !important;
+  width: 100% !important;
 }
 
 .tabTrigger {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.5rem !important;
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.95rem !important;
   font-weight: 600;
-  color: #6b7280;
-  background-color: transparent;
-  border: none;
-  border-radius: 8px;
+  color: #6b7280 !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 8px !important;
   cursor: pointer;
   transition: all 0.3s ease;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  flex: none !important;
+  height: auto !important;
+}
+
+.tabTrigger::after {
+  display: none !important;
 }
 
 .tabTrigger:hover {
-  background-color: #f3f4f6;
-  color: var(--spark-dark-purple, #230127);
+  background-color: #f3f4f6 !important;
+  color: var(--spark-dark-purple, #230127) !important;
 }
 
-.tabTrigger[data-active='true'] {
-  background-color: var(--spark-dark-blue, #1f49c9);
-  color: white;
+.tabTrigger[data-selected] {
+  background-color: var(--spark-dark-blue, #1f49c9) !important;
+  color: white !important;
 }
 
 .tabContent {
