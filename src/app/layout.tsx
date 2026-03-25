@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LockScreen } from "@/components/LockScreen";
 
 export const metadata: Metadata = {
   title: "SPARK Schools — Digital Mini-Audit | Broadbrand",
@@ -22,7 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        {children}
+        <LockScreen>{children}</LockScreen>
       </body>
     </html>
   );
