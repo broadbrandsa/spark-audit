@@ -1016,7 +1016,7 @@ export default function PPCAuditSection() {
             <div
               className="card-spark rounded-2xl p-7"
               style={{
-                background: 'linear-gradient(135deg, rgba(255,72,0,0.1) 0%, rgba(255,72,0,0.05) 100%)',
+                background: 'linear-gradient(135deg, #2B0430 0%, #1a0120 100%)',
                 border: '2px solid #FF4800',
                 position: 'relative',
                 overflow: 'hidden',
@@ -1065,7 +1065,7 @@ export default function PPCAuditSection() {
                 </div>
                 <p
                   style={{
-                    color: 'rgba(0,0,0,0.8)',
+                    color: 'rgba(255,255,255,0.9)',
                     fontSize: '1rem',
                     lineHeight: '1.7',
                     margin: '0.5rem 0 0 0',
@@ -1088,8 +1088,8 @@ export default function PPCAuditSection() {
                   <strong>highest of any campaign at scale</strong>. The message is clear: internal expertise converts better
                   than media spend alone. This is the model we&apos;d scale across every channel.
                 </p>
-                <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,72,0,0.05)', borderRadius: '6px' }}>
-                  <p style={{ fontSize: '0.85rem', color: 'rgba(0,0,0,0.7)', margin: 0, lineHeight: 1.6 }}>
+                <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,72,0,0.08)', borderRadius: '6px' }}>
+                  <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)', margin: 0, lineHeight: 1.6 }}>
                     <strong>WhatsApp update:</strong> WhatsApp conversation campaigns generated 2,660 conversations at R92 each (R244,295 total). Video-format WhatsApp ads significantly outperform image-format — R64/conversation vs R111/conversation. If SPARK enables WhatsApp as an enquiry channel (see our proposal), this becomes a direct lead source, not just a conversation starter.
                   </p>
                 </div>
