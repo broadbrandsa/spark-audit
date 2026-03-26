@@ -24,26 +24,26 @@ interface QuickWin {
 const scoreCards: ScoreCard[] = [
   {
     label: 'SEO Health (Search Visibility)',
-    score: '33/70',
-    status: 'Grade D',
+    score: '37/70',
+    status: 'Grade D+',
     tone: 'red',
   },
   {
     label: 'PPC Efficiency (Paid Ads ROI)',
-    score: '5/10',
-    status: 'Needs Work',
+    score: '6/10',
+    status: 'Moderate',
     tone: 'orange',
   },
   {
     label: 'Marketing Mix (Channel Balance)',
-    score: '6/10',
-    status: 'Moderate',
+    score: '7/10',
+    status: 'Above Average',
     tone: 'blue',
   },
   {
     label: 'Combined Score',
-    score: '44/90',
-    status: 'Grade C-',
+    score: '50/90',
+    status: 'Grade C',
     tone: 'blue',
   },
 ];
@@ -74,32 +74,16 @@ const opportunities: Opportunity[] = [
 
 const quickWins: QuickWin[] = [
   {
-    title: 'Remove 3 dead legacy sitemaps',
-    effort: '2 minutes',
+    title: 'Website hygiene cleanup',
+    effort: 'Remove dead sitemaps, fix URL typos, add canonical tags, 301-redirect broken pages — all in one sprint',
   },
   {
-    title: 'Fix sitemap URL typos with 301 redirects',
-    effort: 'Quick fix',
+    title: 'Rewrite page titles & meta descriptions for top 5 pages',
+    effort: 'These control what parents see in Google — better copy = more clicks from 4.7M impressions',
   },
   {
-    title: 'Add canonical tags',
-    effort: '57 duplicates',
-  },
-  {
-    title: 'Rewrite title tags + meta descriptions for top 5 pages',
-    effort: 'High impact',
-  },
-  {
-    title: 'Promote /virtual-tours page',
-    effort: '5.53% conversion rate — highest on the site',
-  },
-  {
-    title: 'Fix 2 URL slug typos ("pirmary" → "primary")',
-    effort: '5 min + 301 redirects — 154K impressions affected',
-  },
-  {
-    title: 'Set up file download remarketing',
-    effort: '62,031 high-intent parent actions going un-nurtured',
+    title: 'Promote /virtual-tours and set up download remarketing',
+    effort: '5.53% conversion rate on virtual tours + 62,031 file downloads going un-nurtured',
   },
 ];
 
@@ -153,7 +137,7 @@ export default function ExecutiveSummarySection() {
 
           {/* Quick Wins */}
           <div className={styles.quickWinsSection}>
-            <h3 className={styles.subheading}>Quick Wins</h3>
+            <h3 className={styles.subheading}>Where to Start</h3>
             <div className={styles.quickWinsList}>
               {quickWins.map((win, idx) => (
                 <FadeIn key={idx} delay={idx * 0.05}>

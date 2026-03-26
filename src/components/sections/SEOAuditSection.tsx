@@ -19,11 +19,11 @@ interface TabContent {
 }
 
 const scoreMetrics: ScoreMetric[] = [
-  { label: 'Site Speed', score: 4, total: 10 },
+  { label: 'Site Speed', score: 5, total: 10 },
   { label: 'Page Quality', score: 5, total: 10 },
-  { label: 'Content Strength', score: 6, total: 10 },
+  { label: 'Content Strength', score: 7, total: 10 },
   { label: 'External Links', score: 4, total: 10 },
-  { label: 'Competitor Position', score: 4, total: 10 },
+  { label: 'Competitor Position', score: 5, total: 10 },
   { label: 'Content Gaps', score: 6, total: 10 },
 ];
 
@@ -143,13 +143,13 @@ export default function SEOAuditSection() {
           </div>
 
           <div className={styles.headingContainer}>
-            <h2 className={styles.heading}>SEO Health: Grade D</h2>
+            <h2 className={styles.heading}>SEO Health: Grade D+</h2>
             <p className={styles.subtitle}>SPARK is invisible for the searches that matter most</p>
           </div>
 
           {/* Score Breakdown */}
           <div className={styles.scoreBreakdownSection}>
-            <h3 className={styles.scoreBreakdownHeading}>Where the 37 lost points went</h3>
+            <h3 className={styles.scoreBreakdownHeading}>Where the 33 lost points went</h3>
             <div className={styles.scoreMetricsContainer}>
               {scoreMetrics.map((metric, idx) => {
                 const percentage = (metric.score / metric.total) * 100;

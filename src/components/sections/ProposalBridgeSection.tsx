@@ -12,12 +12,6 @@ const ProposalBridgeSection: React.FC = () => {
       visual: 'CPL → CPA',
     },
     {
-      proposal: 'Instant forms are cheap but 71% of parents abandon them',
-      evidence:
-        'Landing page campaigns cost 3x more (R220/lead) but generate higher-intent enquiries. The 71% form abandonment rate confirms: cheaper leads aren\'t better leads.',
-      visual: 'Forms',
-    },
-    {
       proposal: '41K visitors. Zero tracked enquiries. CRM integration fixes this.',
       evidence:
         'TikTok Paid drove 41,527 visitors with zero tracked conversions. Without CRM data flowing back to ad platforms, campaigns can\'t optimise for actual enrolments.',
@@ -26,7 +20,7 @@ const ProposalBridgeSection: React.FC = () => {
     {
       proposal: 'Warm audiences convert 5x better than cold ads',
       evidence:
-        'Broadbrand social converts at 9.54% vs paid TikTok at 0%. The highest conversions come from warm, engaged audiences — exactly what a parent retention system builds.',
+        'Broadbrand social converts at 9.54% vs paid TikTok at 0%. The highest conversions come from warm, engaged audiences. This is exactly what a parent retention system builds.',
       visual: 'Retention',
     },
   ];
@@ -103,27 +97,6 @@ const ProposalBridgeSection: React.FC = () => {
                   height: '100%',
                 }}
               >
-                {/* Visual indicator */}
-                <div
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '60px',
-                    height: '60px',
-                    backgroundColor: '#FF4800',
-                    borderRadius: '4px',
-                    marginBottom: '20px',
-                    fontSize: '12px',
-                    fontWeight: '600',
-                    color: '#2B0430',
-                    textAlign: 'center',
-                    padding: '8px',
-                  }}
-                >
-                  {theme.visual}
-                </div>
-
                 {/* Proposal heading */}
                 <h3
                   style={{
@@ -259,46 +232,6 @@ const ProposalBridgeSection: React.FC = () => {
               </a>
             </div>
 
-            {/* Logo Strip */}
-            <div
-              style={{
-                display: 'flex',
-                gap: '48px',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexWrap: 'wrap',
-              }}
-            >
-              <div
-                style={{
-                  fontSize: '12px',
-                  fontWeight: '600',
-                  color: 'rgba(200, 218, 227, 0.75)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px',
-                }}
-              >
-                Broadbrand
-              </div>
-              <div
-                style={{
-                  width: '1px',
-                  height: '24px',
-                  backgroundColor: 'rgba(200, 218, 227, 0.2)',
-                }}
-              />
-              <div
-                style={{
-                  fontSize: '12px',
-                  fontWeight: '600',
-                  color: 'rgba(200, 218, 227, 0.75)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.5px',
-                }}
-              >
-                DSG
-              </div>
-            </div>
           </div>
         </FadeIn>
       </div>

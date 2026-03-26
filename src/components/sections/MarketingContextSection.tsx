@@ -424,7 +424,7 @@ const MarketingContextSection = () => {
                     marginBottom: "12px",
                   }}
                 >
-                  🤖 Emerging Channel
+                  Emerging Channel
                 </div>
                 <h4
                   style={{
@@ -475,7 +475,7 @@ const MarketingContextSection = () => {
                     marginBottom: "12px",
                   }}
                 >
-                  💎 Hidden Gem
+                  Hidden Gem
                 </div>
                 <h4
                   style={{

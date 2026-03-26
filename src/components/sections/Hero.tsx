@@ -6,7 +6,7 @@ import Image from "next/image";
 const stats = [
   { value: "176,821", label: "Organic Clicks Analysed" },
   { value: "R3.28M", label: "Ad Spend Reviewed" },
-  { value: "33 → 70", label: "SEO Score Target" },
+  { value: "37 → 70", label: "SEO Score Target" },
   { value: "32", label: "Revenue-Driving Actions" },
   { value: "4.7M", label: "Impressions Not Converting" },
 ];

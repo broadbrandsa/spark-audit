@@ -16,7 +16,7 @@ interface Proposal {
 const proposals: Proposal[] = [
   {
     title: 'PPC Campaign Restructure',
-    status: 'Proposed Sept 2024',
+    status: 'Proposed to SPARK',
     description:
       'Consolidate Meta from 80+ campaigns to ~15 with proper funnel structure (top-of-funnel awareness → mid-funnel consideration → bottom-of-funnel conversion). Introduce parent testimonials, founder story ads, and value-driven creative at the top of funnel. Rebalance budget toward Google Ads which delivers enquiries at R64 vs Meta\'s R71.',
     impact: 'Projected 30–50% reduction in cost-per-lead through better funnel alignment and creative rotation',
@@ -24,7 +24,7 @@ const proposals: Proposal[] = [
   },
   {
     title: 'CRM-to-Platform Feedback Loop',
-    status: 'Proposed Sept 2024',
+    status: 'Proposed to SPARK',
     description:
       'Connect SPARK\'s CRM to ad platforms (Meta, Google, TikTok) so campaigns can optimise toward actual enrolments — not just form fills. Currently there is no data flowing back on which leads convert to enrolments, making it impossible to distinguish a R64 lead that enrols from one that doesn\'t.',
     impact: 'Enables campaign optimisation based on lead quality, not just volume — the single biggest efficiency unlock available',
@@ -32,7 +32,7 @@ const proposals: Proposal[] = [
   },
   {
     title: 'Enhanced WhatsApp Integration',
-    status: 'Proposed Sept 2024',
+    status: 'Proposed to SPARK',
     description:
       'Grade + school pre-fill, smart redirects, and conversion tracking via WhatsApp. Parents in South Africa overwhelmingly prefer WhatsApp — offering it as an enquiry channel alongside forms would capture parents who abandon the current 71%-dropout form process.',
     impact: 'Directly addresses the 71% form abandonment bottleneck by offering parents their preferred communication channel',
