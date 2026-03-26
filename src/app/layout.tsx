@@ -3,7 +3,7 @@ import "./globals.css";
 import { LockScreen } from "@/components/LockScreen";
 
 export const metadata: Metadata = {
-  title: "SPARK Schools — Digital Mini-Audit | Broadbrand",
+  title: "SPARK Schools - Digital Mini-Audit | Broadbrand",
   description: "SEO, PPC & Marketing Context Audit for SPARK Schools by Broadbrand Digital Agency",
 };
 

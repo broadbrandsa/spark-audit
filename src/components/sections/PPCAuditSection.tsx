@@ -32,7 +32,7 @@ export default function PPCAuditSection() {
                 marginBottom: '0.5rem',
               }}
             >
-              R3.28M spent. Here&apos;s what&apos;s working — and what isn&apos;t.
+              R3.28M spent. Here&apos;s what&apos;s working - and what isn&apos;t.
             </h2>
           </div>
 
@@ -586,7 +586,7 @@ export default function PPCAuditSection() {
                         borderRadius: '4px',
                       }}
                     >
-                      ⚠ 3.5x more expensive than Search General — we&apos;d reallocate this budget immediately
+                      ⚠ 3.5x more expensive than Search General - we&apos;d reallocate this budget immediately
                     </div>
                   </div>
                 </div>
@@ -1006,7 +1006,7 @@ export default function PPCAuditSection() {
                 </div>
               </div>
               <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.75)', marginTop: '1rem', lineHeight: 1.6, marginBottom: 0 }}>
-                The cost-per-lead gap between the best and worst Meta campaigns is <strong style={{ color: '#fff' }}>7.5x</strong>. Pausing Switch to SPARK and Phase Campaign alone would free up R127,866 — enough to generate <strong style={{ color: '#fff' }}>2,412 additional leads</strong> at the best performer&apos;s rate.
+                The cost-per-lead gap between the best and worst Meta campaigns is <strong style={{ color: '#fff' }}>7.5x</strong>. Pausing Switch to SPARK and Phase Campaign alone would free up R127,866 - enough to generate <strong style={{ color: '#fff' }}>2,412 additional leads</strong> at the best performer&apos;s rate.
               </p>
             </div>
           </FadeIn>
@@ -1084,13 +1084,13 @@ export default function PPCAuditSection() {
                   >
                     broadbrand_social
                   </code>{' '}
-                  campaign achieves a <strong style={{ color: '#FF4800' }}>9.54% conversion rate</strong> — the{' '}
+                  campaign achieves a <strong style={{ color: '#FF4800' }}>9.54% conversion rate</strong> - the{' '}
                   <strong>highest of any campaign at scale</strong>. The message is clear: internal expertise converts better
                   than media spend alone. This is the model we&apos;d scale across every channel.
                 </p>
                 <div style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(255,72,0,0.08)', borderRadius: '6px' }}>
                   <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.8)', margin: 0, lineHeight: 1.6 }}>
-                    <strong>WhatsApp update:</strong> WhatsApp conversation campaigns generated 2,660 conversations at R92 each (R244,295 total). Video-format WhatsApp ads significantly outperform image-format — R64/conversation vs R111/conversation. If SPARK enables WhatsApp as an enquiry channel (see our proposal), this becomes a direct lead source, not just a conversation starter.
+                    <strong>WhatsApp update:</strong> WhatsApp conversation campaigns generated 2,660 conversations at R92 each (R244,295 total). Video-format WhatsApp ads significantly outperform image-format - R64/conversation vs R111/conversation. If SPARK enables WhatsApp as an enquiry channel (see our proposal), this becomes a direct lead source, not just a conversation starter.
                   </p>
                 </div>
               </div>

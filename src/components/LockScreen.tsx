@@ -307,7 +307,7 @@ export function LockScreen({ children }: { children: React.ReactNode }) {
               className="text-xs font-bold uppercase tracking-widest"
               style={{ color: "rgba(239,68,68,0.8)", fontFamily: "var(--font-body)" }}
             >
-              Incorrect code — try again
+              Incorrect code - try again
             </p>
           ) : (
             <p

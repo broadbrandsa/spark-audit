@@ -26,15 +26,15 @@ const proposals: Proposal[] = [
     title: 'CRM-to-Platform Feedback Loop',
     status: 'Proposed to SPARK',
     description:
-      'Connect SPARK\'s CRM to ad platforms (Meta, Google, TikTok) so campaigns can optimise toward actual enrolments — not just form fills. Currently there is no data flowing back on which leads convert to enrolments, making it impossible to distinguish a R64 lead that enrols from one that doesn\'t.',
-    impact: 'Enables campaign optimisation based on lead quality, not just volume — the single biggest efficiency unlock available',
+      'Connect SPARK\'s CRM to ad platforms (Meta, Google, TikTok) so campaigns can optimise toward actual enrolments - not just form fills. Currently there is no data flowing back on which leads convert to enrolments, making it impossible to distinguish a R64 lead that enrols from one that doesn\'t.',
+    impact: 'Enables campaign optimisation based on lead quality, not just volume - the single biggest efficiency unlock available',
     link: { url: 'https://sparkrfq.vercel.app/', label: 'View in Full Proposal' },
   },
   {
     title: 'Enhanced WhatsApp Integration',
     status: 'Proposed to SPARK',
     description:
-      'Grade + school pre-fill, smart redirects, and conversion tracking via WhatsApp. Parents in South Africa overwhelmingly prefer WhatsApp — offering it as an enquiry channel alongside forms would capture parents who abandon the current 71%-dropout form process.',
+      'Grade + school pre-fill, smart redirects, and conversion tracking via WhatsApp. Parents in South Africa overwhelmingly prefer WhatsApp - offering it as an enquiry channel alongside forms would capture parents who abandon the current 71%-dropout form process.',
     impact: 'Directly addresses the 71% form abandonment bottleneck by offering parents their preferred communication channel',
     link: { url: 'https://sparkrfq.vercel.app/', label: 'View in Full Proposal' },
   },
@@ -43,15 +43,15 @@ const proposals: Proposal[] = [
     status: 'Proposed to SPARK',
     description:
       'Integrate AI-optimised display ads with Digital Out-of-Home (DOOH) billboards near SPARK campuses across Gauteng and Pretoria. AI-driven audience targeting continuously analyses user behaviour to determine the best-performing creatives, then extends those winning ads to physical billboard locations at peak commute times. Locations identified include Alberton/Meyersdal, Kyalami/Midrand, Grayston/Sandton, Cresta, Randburg, Tembisa, Soweto, Benmore, Fourways, Roodepoort, Bruma/Eastgate, The Glen, Kempton Park, Wynberg/Sandton, and Prinshof/Pretoria.',
-    impact: 'Omnichannel consistency between digital and physical — parents see the same messaging online and on their commute to school',
+    impact: 'Omnichannel consistency between digital and physical - parents see the same messaging online and on their commute to school',
     link: { url: 'https://sparkrfq.vercel.app/', label: 'View DOOH Proposal' },
   },
   {
     title: 'Newsroom AI Brand Stories',
     status: 'Ready to launch',
     description:
-      'Deploy Newsroom AI\'s Brand Stories platform to create immersive, mobile-first story experiences for SPARK — think Instagram Stories but on the open web, embeddable anywhere and distributable programmatically. Brand Stories achieve up to 15x higher engagement than standard display ads. Content formats include video scenes, interactive polls, shoppable CTAs, and swipeable campus tours. These stories can be amplified across premium publisher inventory via programmatic distribution, extending SPARK\'s reach beyond social media into news sites, parenting portals, and education content.',
-    impact: 'A new creative format that meets parents where they browse — immersive, mobile-native, and measurable across the open web',
+      'Deploy Newsroom AI\'s Brand Stories platform to create immersive, mobile-first story experiences for SPARK - think Instagram Stories but on the open web, embeddable anywhere and distributable programmatically. Brand Stories achieve up to 15x higher engagement than standard display ads. Content formats include video scenes, interactive polls, shoppable CTAs, and swipeable campus tours. These stories can be amplified across premium publisher inventory via programmatic distribution, extending SPARK\'s reach beyond social media into news sites, parenting portals, and education content.',
+    impact: 'A new creative format that meets parents where they browse - immersive, mobile-native, and measurable across the open web',
     link: { url: 'https://brandstories.nws.ai/', label: 'View Brand Stories Platform' },
   },
 ];
@@ -113,7 +113,7 @@ export default function UnlaunchedProposalsSection() {
                 fontFamily: 'var(--font-heading)',
               }}
             >
-              Strategies we&apos;ve proposed — ready to launch
+              Strategies we&apos;ve proposed - ready to launch
             </h2>
             <p
               style={{
@@ -125,7 +125,7 @@ export default function UnlaunchedProposalsSection() {
                 fontFamily: 'var(--font-body)',
               }}
             >
-              These initiatives were developed specifically for SPARK but haven&apos;t yet received the green light. Every one of them addresses a gap identified in this audit — and every one is ready to go.
+              These initiatives were developed specifically for SPARK but haven&apos;t yet received the green light. Every one of them addresses a gap identified in this audit - and every one is ready to go.
             </p>
           </div>
         </FadeIn>
@@ -309,7 +309,7 @@ export default function UnlaunchedProposalsSection() {
                 fontFamily: 'var(--font-body)',
               }}
             >
-              Every strategy above was built with SPARK&apos;s data, accounts, and audience in mind. They&apos;re ready to deploy — all they need is the go-ahead.
+              Every strategy above was built with SPARK&apos;s data, accounts, and audience in mind. They&apos;re ready to deploy - all they need is the go-ahead.
             </p>
           </div>
         </FadeIn>

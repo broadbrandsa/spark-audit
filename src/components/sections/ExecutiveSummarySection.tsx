@@ -52,7 +52,7 @@ const opportunities: Opportunity[] = [
   {
     title: 'Fix the click-through rate crisis',
     description:
-      'SPARK\'s school pages appear 4.7 million times in Google results but only 0.43% of parents click through — that\'s thousands of missed visits',
+      'SPARK\'s school pages appear 4.7 million times in Google results but only 0.43% of parents click through - that\'s thousands of missed visits',
   },
   {
     title: 'TikTok Paid: 41K visitors, zero enquiries',
@@ -64,22 +64,22 @@ const opportunities: Opportunity[] = [
   },
   {
     title: 'Restructure Facebook & Instagram Ads',
-    description: 'R2.75M spread across 80+ campaigns with no clear funnel structure — consolidation would improve efficiency',
+    description: 'R2.75M spread across 80+ campaigns with no clear funnel structure - consolidation would improve efficiency',
   },
   {
     title: 'Create dedicated landing pages for key searches',
-    description: 'Parents searching "private schools Johannesburg" can\'t find SPARK — dedicated pages would capture this high-intent traffic',
+    description: 'Parents searching "private schools Johannesburg" can\'t find SPARK - dedicated pages would capture this high-intent traffic',
   },
 ];
 
 const quickWins: QuickWin[] = [
   {
     title: 'Website hygiene cleanup',
-    effort: 'Remove dead sitemaps, fix URL typos, add canonical tags, 301-redirect broken pages — all in one sprint',
+    effort: 'Remove dead sitemaps, fix URL typos, add canonical tags, 301-redirect broken pages - all in one sprint',
   },
   {
     title: 'Rewrite page titles & meta descriptions for top 5 pages',
-    effort: 'These control what parents see in Google — better copy = more clicks from 4.7M impressions',
+    effort: 'These control what parents see in Google - better copy = more clicks from 4.7M impressions',
   },
   {
     title: 'Promote /virtual-tours and set up download remarketing',

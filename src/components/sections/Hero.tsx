@@ -49,7 +49,7 @@ export function Hero() {
         />
       </div>
 
-      {/* Dark overlay — SPARK brand (over the image) */}
+      {/* Dark overlay - SPARK brand (over the image) */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -57,7 +57,7 @@ export function Hero() {
         }}
       />
 
-      {/* Radial glow — warm orange accent */}
+      {/* Radial glow - warm orange accent */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -120,7 +120,7 @@ export function Hero() {
               letterSpacing: "-0.04em",
             }}
           >
-            A forensic look at what&apos;s working — and what isn&apos;t.
+            A forensic look at what&apos;s working - and what isn&apos;t.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export function Hero() {
               fontSize: "1.125rem",
             }}
           >
-            An SEO, paid advertising &amp; marketing audit prepared by Broadbrand — the team already inside SPARK&apos;s accounts, with 12 months of real performance data.
+            An SEO, paid advertising &amp; marketing audit prepared by Broadbrand - the team already inside SPARK&apos;s accounts, with 12 months of real performance data.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -165,7 +165,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Stats strip — single row, no duplication */}
+      {/* Stats strip - single row, no duplication */}
       <div
         className="hero-animate-5 relative z-10 border-t"
         style={{ borderColor: "rgba(255,255,255,0.08)" }}

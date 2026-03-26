@@ -121,7 +121,7 @@ export function Nav() {
             )}
           </div>
 
-          {/* Performance Report link — external */}
+          {/* Performance Report link - external */}
           <a
             href="https://spark2025-pi.vercel.app/"
             target="_blank"
@@ -134,7 +134,7 @@ export function Nav() {
             ↗ View 2025 Performance Report
           </a>
 
-          {/* Proposal link — external */}
+          {/* Proposal link - external */}
           <a
             href="https://sparkrfq.vercel.app/"
             target="_blank"

@@ -59,7 +59,7 @@ export default function Home() {
                       fontFamily: 'var(--font-body)',
                     }}
                   >
-                    <strong style={{ color: '#374151' }}>A note on transparency:</strong> Broadbrand is SPARK&apos;s current digital agency — so yes, we&apos;re auditing our own work. We&apos;ve approached this exactly as we would an external audit: same methodology, same scoring, same honesty. We have not used inside knowledge of current strategies or campaigns to influence the findings — the data speaks for itself and we wanted this report to be completely objective. The difference is that we have direct access to SPARK&apos;s Google Analytics, Search Console, and Meta Ads data — which means every number in this document is verified, not estimated. We believe the best case for keeping a partner is showing you we know where the gaps are and already have a plan to close them.
+                    <strong style={{ color: '#374151' }}>A note on transparency:</strong> Broadbrand is SPARK&apos;s current digital agency - so yes, we&apos;re auditing our own work. We&apos;ve approached this exactly as we would an external audit: same methodology, same scoring, same honesty. We have not used inside knowledge of current strategies or campaigns to influence the findings - the data speaks for itself and we wanted this report to be completely objective. The difference is that we have direct access to SPARK&apos;s Google Analytics, Search Console, and Meta Ads data - which means every number in this document is verified, not estimated. We believe the best case for keeping a partner is showing you we know where the gaps are and already have a plan to close them.
                   </p>
                 </div>
                 <p
@@ -82,7 +82,7 @@ export default function Home() {
                     fontFamily: 'var(--font-body)',
                   }}
                 >
-                  Throughout this document, <strong>&quot;conversion&quot;</strong> means a parent completing an enquiry form or starting an application — the key action that turns a website visitor into a prospective enrolment.
+                  Throughout this document, <strong>&quot;conversion&quot;</strong> means a parent completing an enquiry form or starting an application - the key action that turns a website visitor into a prospective enrolment.
                 </p>
                 <div
                   style={{
@@ -113,7 +113,7 @@ export default function Home() {
         {/* Executive Summary */}
         <ExecutiveSummarySection />
 
-        {/* SPARK Campus Photos — Classroom */}
+        {/* SPARK Campus Photos - Classroom */}
         <PhotoStrip
           images={[
             { src: "/images/IMG_1561_EDITED.JPG", alt: "SPARK students learning with technology" },
@@ -128,7 +128,7 @@ export default function Home() {
         {/* PPC Audit */}
         <PPCAuditSection />
 
-        {/* SPARK Campus Photos — Sports & Activity */}
+        {/* SPARK Campus Photos - Sports & Activity */}
         <PhotoStrip
           images={[
             { src: "/images/IMG_2525_EDITED_1.jpg", alt: "SPARK student in sports activity" },

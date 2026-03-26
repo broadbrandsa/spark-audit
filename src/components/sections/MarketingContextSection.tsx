@@ -50,7 +50,7 @@ const MarketingContextSection = () => {
                 marginTop: "12px",
               }}
             >
-              The channels that actually convert — and the ones burning budget
+              The channels that actually convert - and the ones burning budget
             </h2>
           </div>
         </FadeIn>
@@ -76,7 +76,7 @@ const MarketingContextSection = () => {
                 lineHeight: "1.6",
               }}
             >
-              The percentage of visitors from each channel who complete an enquiry form or start an application. Higher is better — anything above 3% is strong.
+              The percentage of visitors from each channel who complete an enquiry form or start an application. Higher is better - anything above 3% is strong.
             </p>
             <div
               style={{
@@ -167,7 +167,7 @@ const MarketingContextSection = () => {
           </div>
         </FadeIn>
 
-        {/* The Funnel Breakdown — Visual Funnel */}
+        {/* The Funnel Breakdown - Visual Funnel */}
         <FadeIn>
           <div style={{ marginBottom: "60px" }}>
             <h3
@@ -191,21 +191,21 @@ const MarketingContextSection = () => {
               1.6 million page views enter the top. Only 16,085 applications come out the bottom. Here&apos;s where they drop off.
             </p>
 
-            {/* Funnel Visualization — True Trapezoid Funnel */}
+            {/* Funnel Visualization - True Trapezoid Funnel */}
             <div style={{ maxWidth: "820px", margin: "0 auto" }}>
               {(() => {
-                // Calculate widths — use cube-root scale so smaller stages stay readable
+                // Calculate widths - use cube-root scale so smaller stages stay readable
                 // Round to 2 decimal places to prevent SSR/client hydration mismatch
                 const widths = funnelStages.map((s) =>
                   Math.round(Math.max(28, Math.pow(s.count / maxCount, 0.38) * 100) * 100) / 100
                 );
                 const stageColors = [
-                  "#1f49c9", // Page View — primary blue
+                  "#1f49c9", // Page View - primary blue
                   "#2952cc", // Scroll
                   "#3661cf", // Click
-                  "#5a5bbf", // Form Start — transitioning
-                  "#ff4800", // Form Submit — DANGER orange
-                  "#1f49c9", // Application — back to blue (they made it)
+                  "#5a5bbf", // Form Start - transitioning
+                  "#ff4800", // Form Submit - DANGER orange
+                  "#1f49c9", // Application - back to blue (they made it)
                 ];
 
                 return funnelStages.map((stage, i) => {
@@ -503,7 +503,7 @@ const MarketingContextSection = () => {
                     fontWeight: "500",
                   }}
                 >
-                  Under-invested — 2x Google Organic&apos;s conversion rate
+                  Under-invested - 2x Google Organic&apos;s conversion rate
                 </p>
               </div>
             </div>

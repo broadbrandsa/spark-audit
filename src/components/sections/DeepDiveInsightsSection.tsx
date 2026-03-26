@@ -36,7 +36,7 @@ const insights: Insight[] = [
     icon: Download,
     title: '62,031 parents downloaded files',
     description:
-      'File downloads (likely prospectus, fee schedules, application forms) represent the highest-intent parent action after form submission. These 62,031 downloads are not being tracked as a conversion step or used for remarketing — each one is a warm lead that could be nurtured.',
+      'File downloads (likely prospectus, fee schedules, application forms) represent the highest-intent parent action after form submission. These 62,031 downloads are not being tracked as a conversion step or used for remarketing - each one is a warm lead that could be nurtured.',
     metric: '62,031 downloads',
     severity: 'opportunity',
   },
@@ -52,7 +52,7 @@ const insights: Insight[] = [
     icon: MapPin,
     title: '"Near me" searches: 229K impressions, SPARK barely visible',
     description:
-      'Parents searching "private schools near me," "primary schools near me," and "high schools near me" generate 228,823 impressions — but SPARK captures only 2,539 clicks (1.1%). Most of these queries show SPARK on page 2 (positions 8–21). Dedicated location pages with LocalBusiness schema would move SPARK onto page 1.',
+      'Parents searching "private schools near me," "primary schools near me," and "high schools near me" generate 228,823 impressions - but SPARK captures only 2,539 clicks (1.1%). Most of these queries show SPARK on page 2 (positions 8–21). Dedicated location pages with LocalBusiness schema would move SPARK onto page 1.',
     metric: '229K impressions, 1.1% captured',
     severity: 'critical',
   },
@@ -60,7 +60,7 @@ const insights: Insight[] = [
     icon: Building2,
     title: 'School page conversion rates vary 10x',
     description:
-      'Spark Blue Downs Primary converts at 3.23% while Spark Ferndale Primary converts at 2.19% — and /switch-to-spark converts at just 0.10%. The best-performing school pages should be studied and their patterns replicated. The /switch-to-spark landing page needs a complete overhaul — 2,916 visitors with only 26 enquiries.',
+      'Spark Blue Downs Primary converts at 3.23% while Spark Ferndale Primary converts at 2.19% - and /switch-to-spark converts at just 0.10%. The best-performing school pages should be studied and their patterns replicated. The /switch-to-spark landing page needs a complete overhaul - 2,916 visitors with only 26 enquiries.',
     metric: 'Blue Downs 3.23% vs Switch 0.10%',
     severity: 'warning',
   },
@@ -68,7 +68,7 @@ const insights: Insight[] = [
     icon: Globe,
     title: 'SADC parents are already searching for SPARK',
     description:
-      'Organic search interest from Zimbabwe (232 clicks), Mozambique (134), Eswatini (95), Lesotho (93), Botswana (91), and Zambia (62) — totalling 875 clicks from 12 SADC countries without any marketing effort. These are families actively considering South African private schools. Targeted content for international parents would convert this existing demand.',
+      'Organic search interest from Zimbabwe (232 clicks), Mozambique (134), Eswatini (95), Lesotho (93), Botswana (91), and Zambia (62) - totalling 875 clicks from 12 SADC countries without any marketing effort. These are families actively considering South African private schools. Targeted content for international parents would convert this existing demand.',
     metric: '875 organic clicks from 12 SADC countries',
     severity: 'opportunity',
   },
@@ -76,21 +76,21 @@ const insights: Insight[] = [
     icon: DollarSign,
     title: '"Switch to SPARK" campaign: R401 per lead',
     description:
-      'The Meta "Switch to SPARK" campaign spent R61,419 to generate just 153 leads — R401 per lead, making it the most expensive campaign in the portfolio. By contrast, "Schools | Instant Forms" delivers leads at R53 each. This campaign should be paused immediately and the budget redirected.',
+      'The Meta "Switch to SPARK" campaign spent R61,419 to generate just 153 leads - R401 per lead, making it the most expensive campaign in the portfolio. By contrast, "Schools | Instant Forms" delivers leads at R53 each. This campaign should be paused immediately and the budget redirected.',
     metric: 'R401/lead vs R53/lead best performer',
     severity: 'critical',
   },
   {
     icon: AlertTriangle,
-    title: 'UTM tracking is broken — agencies use different formats',
+    title: 'UTM tracking is broken - agencies use different formats',
     description:
-      'Broadbrand and AdClick (the other agency) use incompatible UTM structures. BroadBrand puts its name in utm_term (wrong field), AdClick uses pipe characters that break analytics parsing, and both use click IDs instead of keywords in utm_term. This means Google Analytics can\'t accurately compare agency performance, channel costs, or keyword ROI. Broadbrand has already created a standardisation plan — it just needs to be implemented.',
+      'Broadbrand and AdClick (the other agency) use incompatible UTM structures. BroadBrand puts its name in utm_term (wrong field), AdClick uses pipe characters that break analytics parsing, and both use click IDs instead of keywords in utm_term. This means Google Analytics can\'t accurately compare agency performance, channel costs, or keyword ROI. Broadbrand has already created a standardisation plan - it just needs to be implemented.',
     metric: 'Can\'t compare agencies or channels',
     severity: 'critical',
   },
   {
     icon: Smartphone,
-    title: 'Desktop scores 93/100 — the entire problem is mobile',
+    title: 'Desktop scores 93/100 - the entire problem is mobile',
     description:
       'The PageSpeed desktop score is 93/100 (excellent), but the mobile score is 56/100 (poor). With 74.4% of SPARK\'s traffic on mobile, this means 3 in 4 parents experience the slow, broken version of the site. The CDN deployment and render-blocking fixes should prioritise mobile performance exclusively.',
     metric: 'Desktop 93 vs Mobile 56',

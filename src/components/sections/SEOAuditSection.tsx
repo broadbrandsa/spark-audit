@@ -32,7 +32,7 @@ const tabContents: { [key: string]: TabContent } = {
     title: 'The Website Is Too Slow',
     metric: '1.4 seconds to start loading (target: 0.2s)',
     description:
-      'The site takes 1.4 seconds before it even begins to appear — 7x slower than Google\'s benchmark. Google\'s speed test (Lighthouse) scores the site 56 out of 100. The total page size is 25.6MB, and 74.4% of visitors are on mobile where this slow speed is most painful. Slow sites lose visitors and rank lower in search results.',
+      'The site takes 1.4 seconds before it even begins to appear - 7x slower than Google\'s benchmark. Google\'s speed test (Lighthouse) scores the site 56 out of 100. The total page size is 25.6MB, and 74.4% of visitors are on mobile where this slow speed is most painful. Slow sites lose visitors and rank lower in search results.',
     impact: 'Critical',
   },
   'on-page': {
@@ -46,7 +46,7 @@ const tabContents: { [key: string]: TabContent } = {
     title: 'Content Trust Signals Are Weak',
     metric: 'Trust Score: 6/10',
     description:
-      'Strengths: 80+ blog posts and T4 Award recognition give SPARK some credibility online. Weaknesses: No author bios on articles (Google rewards content with named, credible authors), and 71% of parents who start an enquiry form abandon it before finishing — suggesting the content isn\'t building enough confidence to complete the action.',
+      'Strengths: 80+ blog posts and T4 Award recognition give SPARK some credibility online. Weaknesses: No author bios on articles (Google rewards content with named, credible authors), and 71% of parents who start an enquiry form abandon it before finishing - suggesting the content isn\'t building enough confidence to complete the action.',
     impact: 'High',
   },
   keywords: {
@@ -67,7 +67,7 @@ const performanceMetrics = [
     details: 'Target: 200ms (7x over)',
   },
   { metric: 'Lighthouse (Mobile)', status: '56/100', details: '74.4% of visitors are on mobile' },
-  { metric: 'Lighthouse (Desktop)', status: '93/100', details: 'Desktop is fine — the problem is mobile' },
+  { metric: 'Lighthouse (Desktop)', status: '93/100', details: 'Desktop is fine - the problem is mobile' },
   { metric: 'Page Weight', status: '25.6MB', details: 'Blocks mobile rendering completely' },
 ];
 
@@ -286,9 +286,9 @@ export default function SEOAuditSection() {
                     <div className={styles.additionalIssues}>
                       <h5 className={styles.issuesHeading}>Additional Issues:</h5>
                       <ul className={styles.issuesList}>
-                        <li>Missing meta descriptions — Google shows a blank snippet instead of a reason to click</li>
-                        <li>No structured data — SPARK can&apos;t appear in rich results, maps, or knowledge panels</li>
-                        <li>Title tags don&apos;t match what parents search for — easy wins left on the table</li>
+                        <li>Missing meta descriptions - Google shows a blank snippet instead of a reason to click</li>
+                        <li>No structured data - SPARK can&apos;t appear in rich results, maps, or knowledge panels</li>
+                        <li>Title tags don&apos;t match what parents search for - easy wins left on the table</li>
                       </ul>
                     </div>
                   </div>
@@ -383,7 +383,7 @@ export default function SEOAuditSection() {
                     </div>
 
                     <div className={styles.opportunityNote}>
-                      These searches happen every day. SPARK is on page 1 but below the fold — most parents never scroll that far. Local schema, content optimisation, and targeted link building can push these into the top 3 where 60% of clicks happen. We&apos;d start here in week one.
+                      These searches happen every day. SPARK is on page 1 but below the fold - most parents never scroll that far. Local schema, content optimisation, and targeted link building can push these into the top 3 where 60% of clicks happen. We&apos;d start here in week one.
                     </div>
                   </div>
                 </FadeIn>
